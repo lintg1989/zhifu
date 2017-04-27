@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 背景色（即边框色）-->
+    <item>
+        <shape>
+            <solid android:color="@color/divide_line_color"/>
+        </shape>
+    </item>
+    <!-- 前景色-->
+    <item
+        android:left="@dimen/divide_line_width"
+        android:right="@dimen/divide_line_width">
+        <shape>
+            <solid android:color="@color/bg_color_app"/>
+        </shape>
+    </item>
+</layer-list>

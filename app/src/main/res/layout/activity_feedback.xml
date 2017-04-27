@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color_under"
+    tools:context="cn.zheft.www.zheft.ui.FeedbackActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <include layout="@layout/layout_clickable"
+        android:id="@+id/rlayout_feedback_type" />
+
+    <include layout="@layout/divide_line_full"/>
+
+    <EditText
+        style="@style/TextContentEdit"
+        android:id="@+id/et_feedbacks"
+        android:maxLength="200"
+        android:minLines="8"
+        android:maxLines="8"
+        android:inputType="textMultiLine"
+        android:gravity="left|top"
+        android:hint="请输入内容（200字以内）"
+        android:background="@color/bg_color_app"
+        android:padding="@dimen/clickbar_default_margin"
+        android:layout_marginBottom="@dimen/button_top_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        style="@style/ButtonTheme"
+        android:id="@+id/btn_feedbacks"
+        android:onClick="feedbackCommit"
+        android:text="@string/commit"
+        android:layout_margin="@dimen/button_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_default_height" />
+
+</LinearLayout>

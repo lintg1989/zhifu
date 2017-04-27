@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_order_detail_type"
+        android:textSize="@dimen/text_size_content_large"
+        android:textColor="@color/text_color_dark"
+        android:paddingTop="@dimen/order_withdraw_head_padding"
+        android:paddingBottom="@dimen/order_withdraw_head_padding_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 金额 -->
+    <TextView
+        android:id="@+id/tv_order_detail_amount"
+        android:textSize="@dimen/text_size_order_detail_large"
+        android:textColor="@color/text_color_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_order_detail_fee"
+        style="@style/TextContentLight"
+        android:layout_marginTop="@dimen/view_small_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 横隔线 -->
+    <View
+        android:layout_marginStart="@dimen/view_default_margin_s"
+        android:layout_marginLeft="@dimen/view_default_margin_s"
+        android:layout_marginRight="@dimen/view_default_margin_s"
+        android:layout_marginEnd="@dimen/view_default_margin_s"
+        android:layout_marginTop="@dimen/order_withdraw_head_padding"
+        android:background="@color/divide_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <!-- 详情列表 -->
+    <ListView
+        android:id="@+id/lv_order_info"
+        android:listSelector="@color/transparent"
+        android:paddingTop="@dimen/view_default_margin_s"
+        android:paddingBottom="@dimen/view_default_margin_s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/divide_line_full" />
+
+    <!-- 取消预约按钮 -->
+    <RelativeLayout
+        android:background="@color/bg_color_under"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_order_detail_cancel"
+            android:onClick="cancelOrder"
+            android:clickable="true"
+            android:visibility="invisible"
+            android:background="@drawable/layout_click_selector"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/view_large_margin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/divide_line_full" />
+            <TextView
+                android:text="@string/order_withdraw_cancel"
+                style="@style/TextContentDark"
+                android:layout_margin="@dimen/view_small_margin"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <include layout="@layout/divide_line_full" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

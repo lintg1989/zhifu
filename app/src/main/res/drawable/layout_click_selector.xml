@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--按下增加不透明度，实现点击变暗效果-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#11000000" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/total_white" />
+        </shape>
+    </item>
+</selector>

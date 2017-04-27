@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="ToolbarStyle">
+        <item name="android:minHeight">@dimen/toolbar_height</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+</resources>

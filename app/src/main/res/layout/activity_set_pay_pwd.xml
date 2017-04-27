@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <!-- 设置支付密码-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/pay_password"
+            android:gravity="center_vertical"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <cn.zheft.www.zheft.view.ClearEditText
+            style="@style/TextContentEdit"
+            android:id="@+id/cet_set_password"
+            android:hint="@string/please_input_pay_pwd"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:digits="@string/char_password_pay"
+            android:background="@color/transparent"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <include layout="@layout/divide_line_short" />
+
+    <!-- 确认新密码-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/pay_password_confirm"
+            android:gravity="center_vertical"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <cn.zheft.www.zheft.view.ClearEditText
+            style="@style/TextContentEdit"
+            android:id="@+id/cet_set_password_twice"
+            android:hint="@string/please_confirm_pay_pwd"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:digits="@string/char_password_pay"
+            android:background="@color/transparent"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <include layout="@layout/divide_line_full" />
+
+    <!-- 底色与按钮-->
+    <RelativeLayout
+        android:paddingTop="@dimen/button_top_margin_large"
+        android:background="@color/bg_color_under"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            style="@style/ButtonTheme"
+            android:id="@+id/btn_set_pwd"
+            android:onClick="setPasswordOk"
+            android:text="@string/ensure"
+            android:layout_margin="@dimen/button_default_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_default_height" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pay_received"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color_under"
+    tools:context="cn.zheft.www.zheft.ui.PayReceivedActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="@dimen/pay_received_padding"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_pay_received_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_pay_received_status"
+                    android:textSize="@dimen/text_size_pay_received_status"
+                    android:textColor="@color/text_color_dark"
+                    android:layout_marginTop="@dimen/view_default_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color_app"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/view_default_margin"
+                android:paddingLeft="@dimen/view_default_margin"
+                android:paddingRight="@dimen/view_default_margin"
+                android:paddingStart="@dimen/view_default_margin">
+
+                <!-- 订单金额 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextContentDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/view_default_margin"
+                        android:layout_marginRight="@dimen/view_default_margin"
+                        android:text="@string/pay_received_amount" />
+
+                    <TextView
+                        android:id="@+id/tv_pay_received_amount"
+                        style="@style/TextContentLight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end" />
+                </LinearLayout>
+                <!-- 支付方式 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextContentDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/view_default_margin"
+                        android:layout_marginRight="@dimen/view_default_margin"
+                        android:text="@string/pay_received_pay_type" />
+
+                    <TextView
+                        android:id="@+id/tv_pay_received_pay_type"
+                        style="@style/TextContentLight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end" />
+                </LinearLayout>
+                <!-- 创建时间 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextContentDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/view_default_margin"
+                        android:layout_marginRight="@dimen/view_default_margin"
+                        android:text="@string/pay_received_create_time" />
+
+                    <TextView
+                        android:id="@+id/tv_pay_received_create_time"
+                        style="@style/TextContentLight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end" />
+                </LinearLayout>
+                <!-- 付款时间/失败原因 -->
+                <LinearLayout
+                    android:id="@+id/ll_pay_received_reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_pay_received_time_reason_hint"
+                        style="@style/TextContentDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/view_default_margin"
+                        android:layout_marginRight="@dimen/view_default_margin"
+                        android:text="@string/pay_received_pay_time" />
+
+                    <TextView
+                        android:id="@+id/tv_pay_received_time_reason"
+                        style="@style/TextContentLight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end" />
+                </LinearLayout>
+                <!-- 交易号 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextContentDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/view_default_margin"
+                        android:layout_marginRight="@dimen/view_default_margin"
+                        android:text="@string/pay_received_code" />
+
+                    <TextView
+                        android:id="@+id/tv_pay_received_code"
+                        style="@style/TextContentLight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pay_received_mask"
+            android:orientation="vertical"
+            android:background="@color/bg_color_app"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</LinearLayout>

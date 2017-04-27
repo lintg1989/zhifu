@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.zheft.www.zheft.ui.HelpsActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <!-- 常见问题-->
+    <include layout="@layout/layout_clickable"
+        android:id="@+id/rlayout_to_problems" />
+
+    <include layout="@layout/divide_line_short" />
+
+    <!-- 意见反馈-->
+    <include layout="@layout/layout_clickable"
+        android:id="@+id/rlayout_to_suggest" />
+
+    <include layout="@layout/divide_line_short" />
+
+    <!-- 联系我们-->
+    <include layout="@layout/layout_clickable"
+        android:id="@+id/rlayout_to_contact" />
+
+    <include layout="@layout/divide_line_full" />
+
+    <!-- 填充底色-->
+    <include layout="@layout/layout_bg_under"/>
+</LinearLayout>

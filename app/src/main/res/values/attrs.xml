@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="color_no_finger_inner_circle" format="color" />
+    <attr name="color_no_finger_outer_circle" format="color" />
+    <attr name="color_finger_on" format="color" />
+    <attr name="color_finger_up" format="color" />
+    <attr name="count" format="integer" />
+    <attr name="tryTimes" format="integer" />
+
+    <declare-styleable name="GestureLockViewGroup">
+        <attr name="color_no_finger_inner_circle" />
+        <attr name="color_no_finger_outer_circle" />
+        <attr name="color_finger_on" />
+        <attr name="color_finger_up" />
+        <attr name="count" />
+        <attr name="tryTimes" />
+    </declare-styleable>
+
+    <!-- 自定义统计图表View-->
+    <attr name="drawColor" format="color" />
+    <declare-styleable name="CustomCountView">
+        <attr name="drawColor" />
+    </declare-styleable>
+
+    <!-- 自定义方形TextView -->
+    <declare-styleable name="SquareTextView">
+        <attr name="colume" format="integer"/>
+        <attr name="row" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CropImageView">
+        <attr name="guidelines">
+            <enum name="on" value="2"/>
+            <enum name="onTouch" value="1"/>
+            <enum name="off" value="0"/>
+        </attr>
+        <attr name="fixAspectRatio" format="boolean"/>
+        <attr name="aspectRatioX" format="integer"/>
+        <attr name="aspectRatioY" format= "integer"/>
+        <attr name="imageResource" format="reference"/>
+    </declare-styleable>
+
+</resources>

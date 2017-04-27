@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.zheft.www.zheft.ui.DeviceDetailActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <TextView
+        android:id="@+id/text_error"
+        android:text="未知错误"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 设备名-->
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/clickbar_default_margin"
+        android:layout_marginRight="@dimen/clickbar_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/device_name"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            style="@style/TextContentDark"
+            android:id="@+id/tv_device_name"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:visibility="invisible"
+            style="@style/TextContentEdit"
+            android:background="@color/transparent"
+            android:id="@+id/et_device_name"
+            android:singleLine="true"
+            android:gravity="center_vertical|right"
+            android:maxLength="8"
+            android:paddingRight="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="128dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_short"/>
+
+    <!-- 厂家-->
+    <RelativeLayout
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/device_company"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            style="@style/TextContentLight"
+            android:id="@+id/tv_device_company"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_short"/>
+
+    <!-- 机具型号-->
+    <RelativeLayout
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/device_code"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            style="@style/TextContentLight"
+            android:id="@+id/tv_device_code"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_short"/>
+
+    <!-- SN 码-->
+    <RelativeLayout
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/device_sn"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            style="@style/TextContentLight"
+            android:id="@+id/tv_device_sn"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line_full"/>
+
+</LinearLayout>

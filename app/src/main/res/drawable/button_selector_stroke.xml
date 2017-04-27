@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--按下增加不透明度，实现点击变暗效果-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <stroke android:color="@color/button_bg_color" android:width="@dimen/button_elevation"/>
+            <solid android:color="#333595ff" />
+            <corners android:radius="@dimen/button_corner_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:color="@color/button_bg_color" android:width="@dimen/button_elevation"/>
+            <solid android:color="@color/transparent" />
+            <corners android:radius="@dimen/button_corner_radius" />
+        </shape>
+    </item>
+</selector>

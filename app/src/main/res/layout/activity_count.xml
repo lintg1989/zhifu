@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.zheft.www.zheft.ui.CountActivity">
+
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/toolbar_count"/>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:layout_below="@+id/toolbar_count"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="@dimen/count_default_margin"
+            android:background="@color/bg_color_under"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/count_search_title"
+                style="@style/TextContentDark"
+                android:gravity="center"
+                android:background="@color/bg_color_app"
+                android:padding="@dimen/view_default_margin_s"
+                android:layout_marginBottom="@dimen/divide_line_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- 统计查询 -->
+            <LinearLayout
+                android:padding="@dimen/count_default_margin"
+                android:orientation="vertical"
+                android:background="@color/bg_color_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- 提示部分 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/start_date"
+                        android:textSize="@dimen/text_size_content_mini"
+                        android:textColor="@color/text_color_light"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/count_small_margin"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"/>
+                    <TextView
+                        android:text="@string/end_date"
+                        android:textSize="@dimen/text_size_content_mini"
+                        android:textColor="@color/text_color_light"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/count_small_margin"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_weight="6"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"/>
+                </LinearLayout>
+                <!-- 操作部分 -->
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/count_large_margin"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/count_search_bar_height">
+                    <TextView
+                        android:id="@+id/tv_start_date"
+                        android:text="3月9日"
+                        android:textSize="@dimen/text_size_content_small"
+                        android:textColor="@color/count_theme_color"
+                        android:gravity="center"
+                        android:background="@color/bg_color_under"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                    <RelativeLayout
+                        android:padding="@dimen/count_default_margin"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <View
+                            android:background="@color/divide_line_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/divide_line_height"/>
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/tv_end_date"
+                        android:text="3月9日"
+                        android:textSize="@dimen/text_size_content_small"
+                        android:textColor="@color/count_theme_color"
+                        android:gravity="center"
+                        android:background="@color/bg_color_under"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                    <View
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"/>
+                    <Button
+                        style="@style/ButtonTheme"
+                        android:id="@+id/btn_search"
+                        android:text="@string/count_search"
+                        android:layout_weight="4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <!-- POS消费 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@color/count_bg_light_blue"
+                    android:padding="@dimen/view_default_margin_s"
+                    android:layout_marginBottom="@dimen/view_small_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/trade_amount_pos"
+                        style="@style/TextContentLight"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_count_pos_num"
+                        style="@style/TextContentDark"
+                        android:gravity="end"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_count_pos_amount"
+                        style="@style/TextContentDark"
+                        android:gravity="end"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!-- 二维码支付 -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@color/count_bg_light_blue"
+                    android:padding="@dimen/view_default_margin_s"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/trade_amount_qrcode"
+                        style="@style/TextContentLight"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_count_qrcode_num"
+                        style="@style/TextContentDark"
+                        android:gravity="end"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_count_qrcode_amount"
+                        style="@style/TextContentDark"
+                        android:gravity="end"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <include layout="@layout/divide_line_full" />
+
+            <!-- 交易统计图表 -->
+            <TextView
+                android:id="@+id/tv_count_chart_head"
+                style="@style/TextContentDark"
+                android:gravity="center"
+                android:background="@color/bg_color_app"
+                android:layout_marginTop="@dimen/count_default_margin"
+                android:padding="@dimen/view_default_margin_s"
+                android:layout_marginBottom="@dimen/divide_line_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- 图表 -->
+            <cn.zheft.www.zheft.view.CustomCountView
+                android:id="@+id/ccv_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

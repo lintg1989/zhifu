@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#e63595ff</color>
+    <color name="colorAccent">#3595ff</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="total_white">#ffffff</color>
+    <color name="total_black">#000000</color>
+    <color name="bg_color_app">#ffffff</color>
+    <color name="bg_color_under">#f5f5f5</color>
+    <color name="bg_color_under_main">#eeeff0</color>
+
+    <!-- 主题色，可以考虑直接使用colorAccent -->
+    <color name="theme_color_app">#3595ff</color>
+
+    <!-- 启动页和引导页背景色-->
+    <color name="bg_color_splash">#dfebf7</color>
+
+    <!-- app分割线-->
+    <color name="divide_line_color">#e0e0e0</color>
+    <color name="divide_line_color_tab">#eeeff0</color>
+
+    <!-- tab相关-->
+    <color name="color_tab_text_unselected">#a4a4a4</color>
+    <color name="color_tab_text_selected">#3595ff</color>
+
+    <!-- 正文字体颜色-->
+    <color name="text_color_dark">#333333</color>
+    <color name="text_color_light">#adadad</color>
+    <!-- 点击字体颜色-->
+    <color name="text_color_clickable">#3595ff</color>
+    <!-- 提现页 银行卡字体颜色-->
+    <color name="text_color_cash_bankcard">#1155aa</color>
+
+    <!-- ProgressDialog 背景色-->
+    <color name="progress_bar_bg_color">#77444444</color>
+    
+    <!-- 主页相关 -->
+    <!-- 金额输入 -->
+    <color name="pay_input_bg">#88b3b3b3</color>
+    <color name="pay_input_num_bg">#edf1f5</color>
+    <color name="pay_input_func_bg">#ffffff</color>
+    <color name="pay_input_amount_bg">#333028</color>
+    <color name="pay_input_wechat">#58bb5b</color>
+    <color name="pay_input_alipay">#00aaee</color>
+
+    <!-- POS相关 -->
+    <!-- pos列表页-->
+    <color name="pos_status_true_color">#3595ff</color>
+    <color name="pos_status_false_color">#ff4444</color>
+
+    <!-- 统计页-->
+    <color name="count_theme_color">#3595ff</color>
+    <color name="count_bg_light_blue">#edf8ff</color>
+
+    <!-- 账户页-->
+    <color name="account_head_blue">#e63595ff</color>
+    <color name="account_dark_blue">#338ff2</color>
+    <color name="account_head_light">#4bffffff</color>
+    <color name="account_text_color_gray">#99ffffff</color>
+
+    <!-- 明细页 暗色遮罩-->
+    <color name="cash_detail_dark">#99222222</color>
+
+    <!-- clickable layout条波纹色-->
+    <color name="layoutbar_ripple_color">#66adadad</color>
+    <!-- 按钮相关颜色-->
+    <color name="button_text_color">#ffffff</color>
+    <color name="button_bg_color">#3595ff</color>
+    <color name="button_bg_color_dark">#167dee</color>
+    <color name="button_bg_unclickable">#adadad</color>
+    <color name="button_ripple_color">#1972ff</color>
+
+
+    <!-- #######################  MeFragment模块相关  ###################### -->
+    <!-- 分割线-->
+    <color name="color_light_line">#e0e0e0</color>
+    <!-- 账户名-->
+    <color name="color_account_text">#ffffff</color>
+    <!-- 电话号码-->
+    <color name="color_telephone">#3595ff</color>
+
+    <!-- 消息列表-->
+    <color name="message_list_not_read">#666666</color>
+    <!-- 银行卡列表页-->
+    <color name="bankcard_list_bg">#3595ff</color>
+
+    <color name="pattern_error_color">#bb2233</color>
+    <color name="pattern_normal_color">#111111</color>
+
+    <!-- 红包页背景-->
+    <color name="hongbao_bg">#ff5858</color>
+    <color name="hongbao_bg_after">#faf7f0</color>
+    <color name="hongbao_text_orange">#ffbe61</color>
+    <color name="hongbao_text_blue">#3595ff</color>
+
+    <!-- 余额背景 -->
+    <color name="balance_head_color">#479efe</color>
+
+
+    <!-- #######################  FindFragment模块相关  ###################### -->
+    <!-- 发现列表相关 -->
+    <color name="find_list_bg">#ebebeb</color>
+    <color name="find_no_data_text">#c7c7c7</color>
+
+
+    <!-- #####################  SelectFragment模块相关  ###################### -->
+    <!-- 设备筛选列表相关 -->
+    <color name="select_label_color_orange">#ff8c00</color>
+
+    <!-- 交易列表待支付字体颜色 -->
+    <color name="trade_list_item_text_waiting">#ff6406</color>
+
+    <color name="yellow">#fff600</color>
+    <color name="blue">#3595ff</color>
+
+</resources>

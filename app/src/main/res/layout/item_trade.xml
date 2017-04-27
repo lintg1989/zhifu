@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/layout_click_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:paddingLeft="@dimen/pos_list_padding_horizontal"
+        android:paddingRight="@dimen/pos_list_padding_horizontal"
+        android:paddingTop="@dimen/pos_list_padding_vertical"
+        android:paddingBottom="@dimen/pos_list_padding_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_item_trade_icon"
+            android:src="@mipmap/trade_icon_pos"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/pos_list_padding_horizontal"
+            android:layout_marginEnd="@dimen/pos_list_padding_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            tools:text="交易成功"
+            style="@style/TextContentDark"
+            android:id="@+id/tv_item_trade_status_name"
+            android:layout_toEndOf="@+id/iv_item_trade_icon"
+            android:layout_toRightOf="@+id/iv_item_trade_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            tools:text="11月3日 13:00:00"
+            android:id="@+id/tv_item_trade_date"
+            android:textSize="@dimen/text_size_pos_list_date"
+            android:textColor="@color/text_color_light"
+            android:layout_below="@+id/tv_item_trade_status_name"
+            android:layout_toEndOf="@+id/iv_item_trade_icon"
+            android:layout_toRightOf="@+id/iv_item_trade_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            tools:text="66.99"
+            android:id="@+id/tv_item_trade_amount"
+            android:textSize="@dimen/text_size_pos_list_amount"
+            android:textColor="@color/text_color_dark"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/divide_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_line_height" />
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_qrcode_scan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.zheft.www.zheft.ui.QRCodeScanActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_qrcode_scan_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:onClick="onQRCodeScanClick"
+        android:id="@+id/rl_qrcode_scan_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/scan_back"
+            android:layout_margin="@dimen/view_default_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/qrcode_scan_padding_top"
+        android:paddingTop="@dimen/qrcode_scan_view_width"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- 扫码框下方的提示语句 -->
+        <LinearLayout
+            android:layout_marginTop="@dimen/view_large_margin_xl"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="请扫描顾客的 "
+                android:textSize="@dimen/text_size_content"
+                android:textColor="@color/total_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_qrcode_scan_type"
+                android:textSize="@dimen/text_size_content"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text=" 付款码完成收款"
+                android:textSize="@dimen/text_size_content"
+                android:textColor="@color/total_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_qrcode_scan_amount"
+            android:textSize="@dimen/text_size_title"
+            android:textColor="@color/total_white"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/view_small_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>

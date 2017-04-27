@@ -1,0 +1,235 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:background="@color/bg_color_under_main"
+    tools:context="cn.zheft.www.zheft.fragm.MeFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/total_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@mipmap/me_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!-- 头像-->
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:src="@mipmap/avatar"
+                    android:layout_marginTop="@dimen/my_avatar_margin"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <!-- 账号（手机号）-->
+                <TextView
+                    tools:text="username"
+                    android:id="@+id/tv_username"
+                    android:textSize="@dimen/text_size_title"
+                    android:textColor="@color/total_white"
+                    android:layout_marginTop="@dimen/my_avatar_margin"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:background="@color/bg_color_under_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/me_padding_small" />
+        <!-- 我的消息-->
+        <RelativeLayout
+            android:id="@+id/rlayout_to_messages"
+            android:clickable="true"
+            android:background="@drawable/layout_click_selector"
+            android:paddingLeft="@dimen/clickbar_withimg_margin"
+            android:paddingRight="@dimen/clickbar_withimg_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/clickbar_default_height">
+
+            <ImageView
+                android:id="@+id/iv_message"
+                android:src="@mipmap/messages"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/clickbar_withimg_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextContentDark"
+                android:layout_toRightOf="@+id/iv_message"
+                android:text="@string/my_messages"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/iv_message_next"
+                android:src="@mipmap/next_btn"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <cn.zheft.www.zheft.view.BadgeView
+                android:id="@+id/badge_view_message"
+                android:layout_marginTop="@dimen/clickbar_default_margin"
+                android:layout_marginBottom="@dimen/clickbar_default_margin"
+                android:layout_toLeftOf="@+id/iv_message_next"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+        <View
+            android:background="@color/bg_color_under_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/me_padding_small" />
+
+        <!-- 设备信息-->
+        <RelativeLayout
+            android:id="@+id/rlayout_to_devices"
+            android:clickable="true"
+            android:background="@drawable/layout_click_selector"
+            android:paddingLeft="@dimen/clickbar_withimg_margin"
+            android:paddingRight="@dimen/clickbar_withimg_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/clickbar_default_height">
+
+            <ImageView
+                android:id="@+id/iv_device"
+                android:src="@mipmap/devices"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/clickbar_withimg_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextContentDark"
+                android:layout_toRightOf="@+id/iv_device"
+                android:text="@string/my_devices"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/next_btn"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:background="@color/divide_line_color"
+            android:layout_marginLeft="@dimen/clickbar_default_margin"
+            android:layout_marginRight="@dimen/clickbar_default_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/clickbar_default_divide" />
+
+        <!-- 银行卡信息-->
+        <RelativeLayout
+            android:id="@+id/rlayout_to_bankcard"
+            android:clickable="true"
+            android:background="@drawable/layout_click_selector"
+            android:paddingLeft="@dimen/clickbar_withimg_margin"
+            android:paddingRight="@dimen/clickbar_withimg_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/clickbar_default_height">
+
+            <ImageView
+                android:id="@+id/iv_bankcards"
+                android:src="@mipmap/bankcards"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/clickbar_withimg_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextContentDark"
+                android:layout_toRightOf="@+id/iv_bankcards"
+                android:text="@string/bankcards_info"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/next_btn"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:background="@color/bg_color_under_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/me_padding_small" />
+
+        <!-- 帮助与反馈-->
+        <RelativeLayout
+            android:id="@+id/rlayout_to_helps"
+            android:clickable="true"
+            android:background="@drawable/layout_click_selector"
+            android:paddingLeft="@dimen/clickbar_withimg_margin"
+            android:paddingRight="@dimen/clickbar_withimg_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/clickbar_default_height">
+
+            <ImageView
+                android:id="@+id/iv_feedbacks"
+                android:src="@mipmap/feedbacks"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/clickbar_withimg_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextContentDark"
+                android:layout_toRightOf="@+id/iv_feedbacks"
+                android:text="@string/helps_and_feedback"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/next_btn"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:background="@color/bg_color_under_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/me_padding_small" />
+
+        <!-- 设置-->
+        <RelativeLayout
+            android:id="@+id/rlayout_to_settings"
+            android:clickable="true"
+            android:background="@drawable/layout_click_selector"
+            android:paddingLeft="@dimen/clickbar_withimg_margin"
+            android:paddingRight="@dimen/clickbar_withimg_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/clickbar_default_height">
+
+            <ImageView
+                android:id="@+id/iv_settings"
+                android:src="@mipmap/settings"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/clickbar_withimg_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextContentDark"
+                android:layout_toRightOf="@+id/iv_settings"
+                android:text="@string/settings"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/next_btn"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

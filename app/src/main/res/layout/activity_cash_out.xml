@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_color_under"
+    tools:context="cn.zheft.www.zheft.ui.CashOutActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cashout_padding_vertical" />
+
+    <!-- 储蓄卡-->
+    <include layout="@layout/divide_line_full" />
+    <RelativeLayout
+        android:id="@+id/rlayout_cashout_bankcard"
+        android:background="@drawable/layout_click_selector"
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_withimg_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            android:id="@+id/tv_cashout_card"
+            style="@style/TextContentDark"
+            android:text="@string/cashout_bankcard"
+            android:gravity="center_vertical"
+            android:layout_width="@dimen/cashout_prompt_width"
+            android:layout_height="match_parent" />
+        <TextView
+            android:onClick="toBankcard"
+            android:id="@+id/tv_cashout_card_name"
+            tools:text="中国建设银行(7976)"
+            android:textSize="@dimen/text_size_content"
+            android:textColor="@color/text_color_cash_bankcard"
+            android:gravity="center_vertical|end"
+            android:layout_toRightOf="@+id/tv_cashout_card"
+            android:layout_toEndOf="@+id/tv_cashout_card"
+            android:layout_toLeftOf="@+id/iv_cashout_card_next"
+            android:layout_toStartOf="@+id/iv_cashout_card_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/iv_cashout_card_next"
+            android:src="@mipmap/next_btn"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_full" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cashout_padding_vertical_small" />
+
+    <!-- 转出金额-->
+    <include layout="@layout/divide_line_full" />
+    <RelativeLayout
+        android:id="@+id/rlayout_cashout_amount"
+        android:background="@drawable/layout_click_selector"
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_withimg_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            android:id="@+id/tv_cashout_amount"
+            style="@style/TextContentDark"
+            android:text="@string/cashout_amount"
+            android:gravity="center_vertical"
+            android:layout_width="@dimen/cashout_prompt_width"
+            android:layout_height="match_parent" />
+        <cn.zheft.www.zheft.view.ClearEditText
+            android:id="@+id/cet_cashout_amount_input"
+            style="@style/TextContentEdit"
+            android:inputType="numberDecimal"
+            android:maxLength="12"
+            android:background="@color/transparent"
+            android:gravity="center_vertical|end"
+            android:layout_toRightOf="@+id/tv_cashout_amount"
+            android:layout_toEndOf="@+id/tv_cashout_amount"
+            android:paddingRight="@dimen/view_small_margin"
+            android:paddingEnd="@dimen/view_small_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_full" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_top_margin_large" />
+
+    <!-- 确认按钮-->
+    <Button
+        style="@style/ButtonTheme"
+        android:id="@+id/btn_cashout"
+        android:onClick="cashOut"
+        android:text="@string/cashout_ok"
+        android:layout_margin="@dimen/button_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_default_height" />
+
+    <!-- 提现说明-->
+    <TextView
+        style="@style/TextContentLight"
+        android:id="@+id/tv_cashout_instruction"
+        android:layout_margin="@dimen/page_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.zheft.www.zheft.ui.SettingActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <!-- 修改登录密码-->
+    <include layout="@layout/layout_clickable"
+        android:id="@+id/rlayout_change_pwd"/>
+    <include layout="@layout/divide_line_short"/>
+
+    <!-- 支付密码-->
+    <include layout="@layout/layout_clickable"
+        android:id="@+id/rlayout_pay_pwd" />
+    <include layout="@layout/divide_line_short"/>
+
+    <!-- 消息推送-->
+    <include layout="@layout/layout_clickable"
+        android:id="@+id/rlayout_msg_push" />
+    <include layout="@layout/divide_line_short"/>
+
+    <!-- 手势密码开关-->
+    <RelativeLayout
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_withimg_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/pattern_lock"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <FrameLayout
+            android:id="@+id/fl_switch_lock"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <Switch
+                android:id="@+id/switch_pattern_lock"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <!-- 根据开关进行隐藏或显示的部分-->
+    <LinearLayout
+        android:id="@+id/llayout_parttern_settings"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/divide_line_short"/>
+
+        <!-- 显示手势轨迹开关-->
+        <RelativeLayout
+            android:paddingLeft="@dimen/clickbar_default_margin"
+            android:paddingRight="@dimen/clickbar_withimg_margin"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/clickbar_default_height">
+            <TextView
+                style="@style/TextContentDark"
+                android:text="@string/show_pattern_lock"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <Switch
+                android:id="@+id/switch_pattern_show"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="true" />
+        </RelativeLayout>
+        <!--<include layout="@layout/divide_line_short"/>-->
+
+        <!-- 修改手势密码-->
+        <include layout="@layout/layout_clickable"
+            android:id="@+id/rlayout_change_ptn" />
+    </LinearLayout>
+    <include layout="@layout/divide_line_short" />
+
+    <!-- 关于我们-->
+    <include layout="@layout/layout_clickable"
+        android:id="@+id/rlayout_to_aboutus" />
+
+    <include layout="@layout/divide_line_full"/>
+
+    <RelativeLayout
+        android:background="@color/bg_color_under"
+        android:paddingTop="@dimen/button_top_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            style="@style/ButtonTheme"
+            android:id="@+id/btn_logout"
+            android:onClick="logout"
+            android:text="@string/logout"
+            android:layout_margin="@dimen/button_default_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_default_height" />
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_below="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试用"/>
+
+        <Button
+            android:id="@+id/btn_test2"
+            android:layout_toRightOf="@id/btn_test"
+            android:layout_below="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试用2"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

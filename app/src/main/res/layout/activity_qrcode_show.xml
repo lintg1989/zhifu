@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_qrcode_show"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.zheft.www.zheft.ui.QRCodeShowActivity">
+
+    <RelativeLayout
+        android:paddingStart="@dimen/view_small_margin"
+        android:paddingLeft="@dimen/view_small_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qrcode_show_title">
+        <ImageView
+            android:id="@+id/iv_qrcode_show_back"
+            android:src="@mipmap/back_icon"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="收款"
+            android:textSize="@dimen/text_size_title"
+            android:textColor="@color/total_white"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/qrcode_show_corner"
+        android:layout_margin="@dimen/view_default_margin"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/TextContentDark"
+            android:id="@+id/tv_qrcode_show_hint"
+            android:paddingTop="@dimen/qrcode_show_padding_small"
+            android:layout_marginBottom="@dimen/view_small_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_qrcode_show_amount"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_title"
+            android:textColor="@color/text_color_dark"
+            android:layout_marginBottom="@dimen/view_default_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layerType="software"
+            android:background="@drawable/stroke_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <ImageView
+            android:id="@+id/iv_qrcode_show_code"
+            android:layout_marginStart="@dimen/qrcode_show_padding_large"
+            android:layout_marginLeft="@dimen/qrcode_show_padding_large"
+            android:layout_marginRight="@dimen/qrcode_show_padding_large"
+            android:layout_marginEnd="@dimen/qrcode_show_padding_large"
+            android:layout_marginTop="@dimen/qrcode_show_padding"
+            android:layout_marginBottom="@dimen/qrcode_show_padding"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_launcher"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

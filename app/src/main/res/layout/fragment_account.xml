@@ -1,0 +1,255 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_app"
+    tools:context="cn.zheft.www.zheft.fragm.AccountFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 今日交易额 -->
+        <RelativeLayout
+            android:gravity="center"
+            android:background="@color/account_head_blue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/account_head_height">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/account_income_today"
+                    android:textSize="@dimen/text_size_account_middle"
+                    android:textColor="@color/total_white"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/account_padding_divide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_income_today"
+                    android:text="@string/account_init_amount"
+                    android:textSize="@dimen/text_size_account_large"
+                    android:textColor="@color/total_white"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 昨日交易额/本月交易额 -->
+        <RelativeLayout
+            android:background="@color/account_dark_blue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/account_dark_height">
+            <View
+                android:id="@+id/view_account_divide"
+                android:layout_centerHorizontal="true"
+                android:background="@color/divide_line_color"
+                android:layout_marginTop="@dimen/account_padding_middle"
+                android:layout_marginBottom="@dimen/account_padding_middle"
+                android:layout_width="@dimen/divide_line_width"
+                android:layout_height="match_parent" />
+            <!-- 昨日交易额 -->
+            <RelativeLayout
+                android:layout_toLeftOf="@+id/view_account_divide"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/account_income_yesterday"
+                        android:textSize="@dimen/text_size_account_small"
+                        android:textColor="@color/total_white"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_income_yesterday"
+                        android:text="@string/account_init_amount"
+                        android:layout_marginTop="@dimen/account_padding_small"
+                        android:textSize="@dimen/text_size_account_middle"
+                        android:textColor="@color/total_white"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- 本月交易额 -->
+            <RelativeLayout
+                android:layout_toRightOf="@+id/view_account_divide"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/account_income_month"
+                        android:textSize="@dimen/text_size_account_small"
+                        android:textColor="@color/total_white"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_income_month"
+                        android:text="@string/account_init_amount"
+                        android:layout_marginTop="@dimen/account_padding_small"
+                        android:textSize="@dimen/text_size_account_middle"
+                        android:textColor="@color/total_white"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:visibility="gone"
+            android:background="@color/bg_color_under_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/account_padding_divide" />
+        <!-- 余额-->
+        <RelativeLayout
+            android:id="@+id/rlayout_to_balance"
+            android:clickable="true"
+            android:background="@drawable/layout_click_selector"
+            android:paddingLeft="@dimen/clickbar_withimg_margin"
+            android:paddingRight="@dimen/clickbar_withimg_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/clickbar_default_height">
+
+            <ImageView
+                android:id="@+id/iv_balance"
+                android:src="@mipmap/account_balance"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/clickbar_withimg_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextContentDark"
+                android:id="@+id/tv_account_balance_hint"
+                android:layout_toRightOf="@+id/iv_balance"
+                android:text="@string/account_balance"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextContentDark"
+                android:id="@+id/tv_account_balance"
+                android:layout_toRightOf="@+id/tv_account_balance_hint"
+                android:layout_marginLeft="@dimen/clickbar_withimg_margin"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/next_btn"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/bg_color_under_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/account_padding_divide" />
+
+        <!-- 统计-->
+        <RelativeLayout
+            android:id="@+id/rlayout_to_count"
+            android:clickable="true"
+            android:background="@drawable/layout_click_selector"
+            android:paddingLeft="@dimen/clickbar_withimg_margin"
+            android:paddingRight="@dimen/clickbar_withimg_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/clickbar_default_height">
+
+            <ImageView
+                android:id="@+id/iv_count"
+                android:src="@mipmap/account_count"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/clickbar_withimg_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextContentDark"
+                android:layout_toRightOf="@+id/iv_count"
+                android:text="@string/account_count"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/next_btn"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/bg_color_under_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/account_padding_divide" />
+
+        <!-- 二维码收款 -->
+        <RelativeLayout
+            android:id="@+id/rlayout_to_qrcode"
+            android:clickable="true"
+            android:visibility="gone"
+            android:background="@drawable/layout_click_selector"
+            android:paddingLeft="@dimen/clickbar_withimg_margin"
+            android:paddingRight="@dimen/clickbar_withimg_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/clickbar_default_height">
+
+            <ImageView
+                android:id="@+id/iv_qrcode"
+                android:src="@mipmap/account_qrcode"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/clickbar_withimg_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextContentDark"
+                android:layout_toRightOf="@+id/iv_qrcode"
+                android:text="@string/account_qrcode"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/next_btn"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/bg_color_under_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibtn_account_overlay"
+        android:visibility="invisible"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 用于account页的progressbar-->
+    <RelativeLayout
+        android:paddingTop="@dimen/tab_layout_height"
+        android:id="@+id/account_progress_dialog"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/progress_dialog" />
+    </RelativeLayout>
+
+</FrameLayout>

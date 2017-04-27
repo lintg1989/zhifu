@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.zheft.www.zheft.ui.CheckUserActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <!-- 法人姓名-->
+    <RelativeLayout
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/check_mer_legal_name"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            style="@style/TextContentLight"
+            android:id="@+id/tv_check_mer_legal_name"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_short"/>
+
+    <!-- 商户名-->
+    <RelativeLayout
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:id="@+id/tv_check_merchant_name_head"
+            android:text="@string/check_merchant_name"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:layout_toRightOf="@+id/tv_check_merchant_name_head"
+            android:layout_marginLeft="@dimen/clickbar_default_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                style="@style/TextContentLight"
+                android:id="@+id/tv_check_merchant_name"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <include layout="@layout/divide_line_short"/>
+
+    <!-- 证件号-->
+    <RelativeLayout
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/check_paper_number"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            style="@style/TextContentLight"
+            android:id="@+id/tv_check_paper_number"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_short"/>
+
+    <!-- 开户账号-->
+    <RelativeLayout
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/check_account_no"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            style="@style/TextContentLight"
+            android:id="@+id/tv_check_account_no"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_full"/>
+
+    <!-- 按钮部分-->
+    <RelativeLayout
+        android:background="@color/bg_color_under"
+        android:paddingTop="@dimen/button_top_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- 确认-->
+        <Button
+            style="@style/ButtonTheme"
+            android:id="@+id/btn_check_ok"
+            android:onClick="checkOk"
+            android:text="@string/ensure"
+            android:layout_margin="@dimen/button_default_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_default_height" />
+    </RelativeLayout>
+
+</LinearLayout>

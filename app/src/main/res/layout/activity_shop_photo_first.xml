@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="cn.zheft.www.zheft.ui.ShopPhotoFirstActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_business"
+                style="@style/CardPhoto"
+                android:src="@drawable/ic_business"
+                android:layout_width="match_parent"
+                android:onClick="jump" />
+            <ImageView
+                android:id="@+id/iv_shop_outside"
+                style="@style/CardPhoto"
+                android:src="@drawable/ic_shop_outside"
+                android:layout_width="match_parent"
+                android:onClick="jump" />
+            <ImageView
+                android:id="@+id/iv_shop_inside"
+                style="@style/CardPhoto"
+                android:src="@drawable/ic_shop_inside"
+                android:layout_width="match_parent"
+                android:onClick="jump" />
+
+            <ImageView
+                android:id="@+id/iv_desk"
+                style="@style/CardPhoto"
+                android:src="@drawable/ic_desk"
+                android:layout_width="match_parent"
+                android:onClick="jump" />
+
+
+            <Button
+                style="@style/ButtonTheme"
+                android:id="@+id/btn_save"
+                android:onClick="save"
+                android:text="保存"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_default_height" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.zheft.www.zheft.ui.LoginActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/page_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 输入手机号-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_default_height">
+            <ImageView
+                android:id="@+id/iv_input_phone"
+                android:src="@mipmap/icon_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <cn.zheft.www.zheft.view.ClearEditText
+                style="@style/TextContentEdit"
+                android:id="@+id/cet_input_phone"
+                android:hint="@string/input_pos_phone"
+                android:maxLength="11"
+                android:inputType="phone"
+                android:digits="@string/char_phone_number"
+                android:background="@color/transparent"
+                android:paddingLeft="@dimen/input_withimg_padding"
+                android:layout_toRightOf="@+id/iv_input_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <include layout="@layout/divide_line_full" />
+
+        <!-- 输入密码-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_default_height">
+            <ImageView
+                android:id="@+id/iv_input_password"
+                android:src="@mipmap/icon_password"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <cn.zheft.www.zheft.view.ClearEditText
+                style="@style/TextContentEdit"
+                android:id="@+id/cet_input_password"
+                android:hint="@string/input_password"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:digits="@string/char_password"
+                android:background="@color/transparent"
+                android:paddingLeft="@dimen/input_withimg_padding"
+                android:layout_toRightOf="@+id/iv_input_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <include layout="@layout/divide_line_full" />
+
+        <!-- 忘记密码-->
+        <TextView
+            style="@style/TextContentClick"
+            android:id="@+id/tv_forget_pwd"
+            android:onClick="loginForgetPwd"
+            android:text="@string/forget_password"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:paddingTop="@dimen/button_top_margin"
+        android:paddingBottom="@dimen/page_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- 登录按钮-->
+        <Button
+            style="@style/ButtonTheme"
+            android:id="@+id/btn_login"
+            android:onClick="loginOk"
+            android:text="@string/login"
+            android:layout_marginLeft="@dimen/button_default_margin"
+            android:layout_marginRight="@dimen/button_default_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_default_height" />
+        <!-- 认领/注册 -->
+        <LinearLayout
+            android:layout_margin="@dimen/view_default_margin"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                style="@style/ButtonThemeStroke"
+                android:id="@+id/btn_claim"
+                android:onClick="loginToClaim"
+                android:text="@string/claim_pos_user"
+                android:layout_margin="@dimen/view_small_margin"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_small_height" />
+            <Button
+                style="@style/ButtonTheme"
+                android:id="@+id/btn_register"
+                android:onClick="loginToRegister"
+                android:text="@string/register_qrcode_user"
+                android:layout_margin="@dimen/view_small_margin"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_small_height" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

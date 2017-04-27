@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="zheft" ></dbname>
+
+    <version value="2" ></version>
+
+    <list>
+        <mapping class="cn.zheft.www.zheft.model.MsgDeviceInfo"></mapping>
+        <mapping class="cn.zheft.www.zheft.model.MessageInfo" ></mapping>
+        <mapping class="cn.zheft.www.zheft.model.FindInfo" ></mapping>
+    </list>
+</litepal>

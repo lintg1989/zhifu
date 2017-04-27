@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 我的设备列表项-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/layout_click_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        style="@style/TextContentDark"
+        android:id="@+id/tv_item_device"
+        android:text="@string/item_device"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/clickbar_default_height" />
+    <ImageView
+        android:src="@mipmap/next_btn"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/clickbar_withimg_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/clickbar_default_height" />
+    <View
+        android:id="@+id/view_divide"
+        android:layout_below="@+id/tv_item_device"
+        android:background="@color/divide_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_divide" />
+
+</RelativeLayout>

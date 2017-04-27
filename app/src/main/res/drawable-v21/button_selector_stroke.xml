@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 圆角按钮，带背景色的水波纹效果-->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#333595ff">
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:color="@color/button_bg_color" android:width="@dimen/button_elevation"/>
+            <solid android:color="#ffffff" />
+            <corners android:radius="@dimen/button_corner_radius" />
+        </shape>
+    </item>
+</ripple>

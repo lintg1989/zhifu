@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.zheft.www.zheft.ui.FeedbackTypeActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <!-- 意见与建议-->
+    <RelativeLayout
+        android:onClick="feedbackAdvice"
+        android:clickable="true"
+        android:background="@drawable/layout_click_selector"
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_withimg_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:id="@+id/tv_feedback_advice"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/iv_feedback_advice"
+            android:src="@mipmap/checked"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_short"/>
+
+    <!-- 故障报修-->
+    <RelativeLayout
+        android:onClick="feedbackReport"
+        android:clickable="true"
+        android:background="@drawable/layout_click_selector"
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_withimg_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:id="@+id/tv_feedback_report"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/iv_feedback_report"
+            android:src="@mipmap/checked"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_short"/>
+
+    <!-- 合作洽谈-->
+    <RelativeLayout
+        android:onClick="feedbackCoorper"
+        android:clickable="true"
+        android:background="@drawable/layout_click_selector"
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_withimg_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:id="@+id/tv_feedback_coorper"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/iv_feedback_coorper"
+            android:src="@mipmap/checked"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_full"/>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@drawable/layout_click_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:padding="@dimen/message_list_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_item_message_icon"
+            tools:src="@mipmap/message_icon_hongbao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            tools:text="红包"
+            android:id="@+id/tv_item_message_type"
+            android:textSize="@dimen/text_size_message_list_type"
+            android:textColor="@color/text_color_dark"
+            android:layout_toRightOf="@+id/iv_item_message_icon"
+            android:paddingLeft="@dimen/message_list_padding_horizontal_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                tools:text="2016-07-20"
+                android:textSize="@dimen/text_size_message_list_date"
+                android:textColor="@color/message_list_not_read"
+                android:id="@+id/tv_item_message_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_item_message_badge"
+                android:src="@mipmap/badge"
+                android:layout_marginLeft="@dimen/message_list_padding_budge"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            tools:text="新手红包"
+            android:id="@+id/tv_item_message_content"
+            android:textSize="@dimen/text_size_content"
+            android:textColor="@color/message_list_not_read"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/message_list_padding_horizontal_small"
+            android:paddingTop="@dimen/message_list_padding_horizontal_small"
+            android:layout_toRightOf="@+id/iv_item_message_icon"
+            android:layout_below="@+id/tv_item_message_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/divide_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_line_height" />
+
+</LinearLayout>

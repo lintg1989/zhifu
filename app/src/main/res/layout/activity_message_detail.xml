@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.zheft.www.zheft.ui.MessageDetailActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <TextView
+        android:id="@+id/text_error"
+        android:text="@string/error_unknown"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:padding="@dimen/message_list_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_message_detail_type"
+            android:textSize="@dimen/text_size_message_list_type"
+            android:textColor="@color/text_color_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/TextContentLight"
+            android:id="@+id/tv_message_detail_date"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_message_detail_content"
+            style="@style/TextContentDark"
+            android:paddingTop="@dimen/message_list_padding_vertical_small"
+            android:layout_below="@+id/tv_message_detail_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

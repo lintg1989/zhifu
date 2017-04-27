@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@drawable/progress_dialog_corner"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_margin="@dimen/view_default_margin_s"
+        app:indicatorName="LineSpinFadeLoaderIndicator"
+        app:indicatorColor="@color/total_white"
+        app:minWidth="@dimen/progress_content_size"
+        app:minHeight="@dimen/progress_content_size"
+        app:maxHeight="@dimen/progress_content_size"
+        app:maxWidth="@dimen/progress_content_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progress_bar"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:padding="@dimen/progress_bar_padding"-->
+        <!--style="?android:attr/progressBarStyle"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+</LinearLayout>

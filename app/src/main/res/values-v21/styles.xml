@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowBackground">@color/bg_color_app</item>
+        <item name="android:datePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+    </style>
+
+    <!-- 按钮样式，无阴影，白色字体，字号-->
+    <style name="ButtonTheme" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:elevation">@dimen/button_elevation</item>
+    </style>
+
+    <!-- 镂空按钮样式，无阴影，蓝色字体，字号-->
+    <style name="ButtonThemeStroke" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/button_bg_color</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:background">@drawable/button_selector_stroke</item>
+        <item name="android:elevation">@dimen/button_elevation</item>
+    </style>
+
+    <!-- 自定义日期选择背景色-->
+    <style name="MyDatePickerDialogTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

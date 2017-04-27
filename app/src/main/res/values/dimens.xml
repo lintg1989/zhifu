@@ -1,0 +1,258 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="view_large_margin_xl">48dp</dimen>
+    <dimen name="view_large_margin_l">40dp</dimen>
+    <dimen name="view_large_margin">32dp</dimen>
+    <dimen name="view_large_margin_s">24dp</dimen>
+
+    <dimen name="view_default_margin_l">20dp</dimen>
+    <dimen name="view_default_margin">16dp</dimen>
+    <dimen name="view_default_margin_s">12dp</dimen>
+
+    <dimen name="view_small_margin_l">10dp</dimen>
+    <dimen name="view_small_margin">8dp</dimen>
+    <dimen name="view_small_margin_s">6dp</dimen>
+
+    <!-- #################### 系统相关 #################### -->
+    <!-- 分割线-->
+    <dimen name="tab_header_line_height">0.5dp</dimen>
+    <dimen name="toolbar_under_line_height">0.5dp</dimen>
+    <dimen name="divide_line_height">0.5dp</dimen>
+    <!--横向分隔条-->
+    <dimen name="divide_line_pos_detail_width">1dp</dimen>
+
+    <!-- Tab高度-->
+    <dimen name="tab_layout_height">56dp</dimen>
+    <dimen name="tab_badge_margin_horizontal">16dp</dimen>
+    <dimen name="tab_badge_margin_vertical">8dp</dimen>
+
+    <!-- Toolbar高度-->
+    <!--<dimen name="toolbar_height">56dp</dimen>-->
+
+    <!-- 按钮高度和与上方距离、边距-->
+    <dimen name="button_small_height">36dp</dimen>
+    <dimen name="button_default_height">40dp</dimen>
+    <dimen name="button_top_margin_large">56dp</dimen>
+    <dimen name="button_top_margin">48dp</dimen>
+    <dimen name="button_default_margin">16dp</dimen>
+    <dimen name="button_corner_radius">4dp</dimen>
+    <dimen name="button_elevation">1dp</dimen>
+
+    <!-- ProgressBar 边距-->
+    <dimen name="progress_content_size">36dp</dimen>
+    <dimen name="progress_dialog_corner">8dp</dimen>
+
+    <!-- Pay_pwd 边框-->
+    <dimen name="pay_pwd_dialog_corner">8dp</dimen>
+    <dimen name="pay_pwd_dialog_title_height">48dp</dimen>
+    <dimen name="pay_pwd_dialog_pwd_height">42dp</dimen>
+    <dimen name="pay_pwd_dialog_padding">16dp</dimen>
+    <dimen name="pay_pwd_dialog_padding_small">8dp</dimen>
+    <dimen name="pay_pwd_dialog_padding_large">24dp</dimen>
+
+    <!-- ########################### 主页面 ########################### -->
+    <!-- POS列表页、POS搜索页-->
+    <dimen name="pos_list_padding_horizontal">16dp</dimen>
+    <dimen name="pos_list_padding_vertical">12dp</dimen>
+    <dimen name="pos_list_padding_vertical_small">2dp</dimen>
+    <dimen name="pos_list_padding_status">2dp</dimen>
+    <!-- POS页小红点边距-->
+    <dimen name="pos_device_badge_padding_horizontal">40dp</dimen>
+    <dimen name="pos_device_badge_padding_vertical">20dp</dimen>
+    <!-- POS详情页-->
+    <dimen name="pos_detail_padding">16dp</dimen>
+    <dimen name="pos_detail_text_height">32dp</dimen>
+    <dimen name="pos_detail_dotted_line">22dp</dimen>
+    <dimen name="pos_detail_logo_padding">12dp</dimen>
+    <dimen name="pos_line_dash_gap">3dp</dimen>
+    <dimen name="pos_line_dash_width">3dp</dimen>
+    <dimen name="pos_line_width">1dp</dimen>
+
+    <!-- Home页 -->
+    <dimen name="home_head_height">140dp</dimen>
+    <dimen name="dialog_open_qrcode_agreement">240dp</dimen>
+
+    <!-- 金额输入盘页面 -->
+    <dimen name="pay_input_select_way_height">64dp</dimen>
+
+    <!-- Account账户页-->
+    <dimen name="account_head_height">180dp</dimen>
+    <dimen name="account_dark_height">48dp</dimen>
+    <dimen name="account_padding_default">16dp</dimen>
+    <dimen name="account_padding_middle">12dp</dimen>
+    <dimen name="account_padding_small">2dp</dimen>
+    <dimen name="account_padding_divide">10dp</dimen>
+
+    <!-- 余额页面 -->
+    <dimen name="balance_head_height">150dp</dimen>
+    <dimen name="balance_head_padding_top">40dp</dimen>
+    <dimen name="balance_padding_default">14dp</dimen>
+
+    <!-- 预约提现 -->
+    <dimen name="order_withdraw_head_padding">28dp</dimen>
+    <dimen name="order_withdraw_head_padding_small">20dp</dimen>
+
+    <!-- Count统计页-->
+    <dimen name="count_default_margin">14dp</dimen>
+    <dimen name="count_small_margin">4dp</dimen>
+    <dimen name="count_large_margin">24dp</dimen>
+    <dimen name="count_search_bar_height">30dp</dimen>
+
+    <dimen name="cashout_padding_vertical">12dp</dimen>
+    <dimen name="cashout_padding_vertical_small">6dp</dimen>
+    <dimen name="cashout_prompt_width">72dp</dimen>
+
+    <!-- 收款页 -->
+    <dimen name="pay_received_padding">64dp</dimen>
+
+    <!-- 二维码页 -->
+    <dimen name="qrcode_show_title">56dp</dimen>
+    <dimen name="qrcode_show_corner">8dp</dimen>
+    <dimen name="qrcode_show_padding_small">28dp</dimen>
+    <dimen name="qrcode_show_padding">36dp</dimen>
+    <dimen name="qrcode_show_padding_large">64dp</dimen>
+
+    <dimen name="qrcode_scan_padding_top">144dp</dimen>
+    <dimen name="qrcode_scan_view_width">240dp</dimen>
+    <dimen name="qrcode_scan_corner_width">2dp</dimen>
+    <dimen name="qrcode_scan_corner_length">10dp</dimen>
+
+    <!-- 消息页-->
+    <dimen name="message_push_padding">12dp</dimen>
+
+    <!-- 红包页-->
+    <dimen name="hongbao_padding_default">36dp</dimen>
+    <dimen name="hongbao_padding_small">16dp</dimen>
+    <dimen name="hongbao_padding_tiny">2dp</dimen>
+
+    <!-- 欢迎页 -->
+    <dimen name="welcome_padding_default">16dp</dimen>
+    <dimen name="welcome_padding_large">32dp</dimen>
+    <dimen name="welcome_padding_small">4dp</dimen>
+    <dimen name="welcome_padding_corner">4dp</dimen>
+
+    <!-- 发现页面相关 -->
+    <dimen name="find_item_divide">10dp</dimen>
+    <dimen name="find_item_padding_horizontal">12dp</dimen>
+    <dimen name="find_item_padding_vertical">16dp</dimen>
+    <dimen name="find_padding_no_data">48dp</dimen>
+
+    <!-- 我的页面相关-->
+    <dimen name="me_padding_small">10dp</dimen>
+
+    <dimen name="clickbar_default_margin">16dp</dimen>
+    <dimen name="clickbar_withimg_margin">8dp</dimen>
+    <dimen name="clickbar_default_height">48dp</dimen>
+    <dimen name="clickbar_default_divide">0.5dp</dimen>
+
+    <dimen name="contect_divide_view">12dp</dimen>
+    <dimen name="contect_address_margin">8dp</dimen>
+
+    <dimen name="message_list_padding">14dp</dimen>
+    <dimen name="message_list_padding_vertical_small">12dp</dimen>
+    <dimen name="message_list_padding_horizontal_small">8dp</dimen>
+    <dimen name="message_list_padding_budge">4dp</dimen>
+
+    <dimen name="device_list_padding_horizontal">16dp</dimen>
+    <dimen name="device_list_padding_vertical">8dp</dimen>
+    <dimen name="device_list_padding_radiobutton">8dp</dimen>
+
+    <dimen name="card_list_padding_horizontal">16dp</dimen>
+    <dimen name="card_list_padding_vertical">12dp</dimen>
+    <dimen name="card_list_padding_text">8dp</dimen>
+    <dimen name="card_list_height">96dp</dimen>
+    <dimen name="card_list_cornerradius">8dp</dimen>
+    <dimen name="card_list_elevation">1dp</dimen>
+
+    <dimen name="about_us_padding_large">24dp</dimen>
+    <dimen name="about_us_padding">16dp</dimen>
+
+    <dimen name="my_avatar_margin">16dp</dimen>
+
+    <!-- 认领、登录、忘记密码、手势密码等-->
+    <dimen name="input_withimg_padding">12dp</dimen>
+    <dimen name="input_default_height">48dp</dimen>
+    <dimen name="page_default_margin">16dp</dimen>
+    <dimen name="page_default_margin_large">24dp</dimen>
+    <dimen name="page_text_margin">8dp</dimen>
+    <!-- 锁屏页头像大小-->
+    <dimen name="lock_avatar_height">48dp</dimen>
+
+    <!--竖向分隔条（验证码）-->
+    <dimen name="divide_line_width">1dp</dimen>
+    <!-- 竖向分隔条横向边距-->
+    <dimen name="divide_line_vertical_margin">12dp</dimen>
+    <!-- 获取验证码控件宽度-->
+    <dimen name="get_verify_text_width">90dp</dimen>
+
+
+    <!-- #################### 各种列表adapter相关 #################### -->
+    <dimen name="item_footer_height">36dp</dimen>
+    <dimen name="item_pos_default_padding">16dp</dimen>
+
+
+    <!-- ##############################  字体  ############################## -->
+    <!-- 标题-->
+    <dimen name="text_size_title">18sp</dimen>
+    <!-- 非常用字号 -->
+    <dimen name="text_size_content_large">16sp</dimen>
+    <!-- 正文（黑字/灰字）-->
+    <dimen name="text_size_content">14sp</dimen>
+    <!-- 小正文，忘密、认领、登录、协议等页面点击文字-->
+    <dimen name="text_size_content_small">12sp</dimen>
+    <!-- 少部分提示文字 -->
+    <dimen name="text_size_content_mini">10sp</dimen>
+    <!-- tab字体大小-->
+    <dimen name="tab_text_size">10sp</dimen>
+    <!-- button 字体大小-->
+    <dimen name="button_text_size">14sp</dimen>
+    <!-- 列表footer-->
+    <dimen name="text_size_list_footer">14sp</dimen>
+
+    <!--  POS页相关 -->
+    <!-- Pos列表-->
+    <dimen name="text_size_pos_list_amount">20sp</dimen>
+    <dimen name="text_size_pos_list_date">12sp</dimen>
+    <dimen name="text_size_pos_list_status">12sp</dimen>
+    <!-- Pos详情页-->
+    <dimen name="text_size_pos_detail_cardnum">20sp</dimen>
+    <dimen name="text_size_pos_detail_amount">22sp</dimen>
+
+    <!-- Account账户页相关 -->
+    <dimen name="text_size_account_large">36sp</dimen>
+    <dimen name="text_size_account_middle">16sp</dimen>
+    <dimen name="text_size_account_small">10sp</dimen>
+
+    <dimen name="text_size_balance_hint">16sp</dimen>
+    <dimen name="text_size_balance_amount">36sp</dimen>
+
+    <dimen name="text_size_pay_received_status">22sp</dimen>
+
+    <!-- Find 发现页相关 -->
+    <dimen name="text_size_find_no_data">16sp</dimen>
+
+    <!-- Me 我的页面相关-->
+    <!-- 消息列表-->
+    <dimen name="text_size_message_list_type">16sp</dimen>
+    <dimen name="text_size_message_list_date">12sp</dimen>
+    <dimen name="text_size_message_list_content">14sp</dimen>
+    <!-- 设备列表-->
+    <dimen name="text_size_device_list_radio">12sp</dimen>
+    <!-- 银行卡列表-->
+    <dimen name="text_size_cards_list_type">12sp</dimen>
+    <!-- 关于我们内容-->
+    <dimen name="text_size_about_content">12sp</dimen>
+
+    <!-- 红包页面-->
+    <dimen name="text_size_hongbao_small">18sp</dimen>
+    <dimen name="text_size_hongbao_middle">20sp</dimen>
+    <dimen name="text_size_hongbao_large">36sp</dimen>
+
+    <!-- 预约提现 -->
+    <dimen name="text_size_order_detail_large">30sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 余额 -->
+    <LinearLayout
+        android:paddingLeft="@dimen/balance_padding_default"
+        android:paddingTop="@dimen/balance_head_padding_top"
+        android:background="@color/balance_head_color"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/balance_head_height">
+        <TextView
+            android:text="@string/balance_account_hint"
+            android:textSize="@dimen/text_size_balance_hint"
+            android:textColor="@color/total_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_balance"
+            android:textSize="@dimen/text_size_balance_amount"
+            android:textColor="@color/total_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/divide_line_full" />
+
+</LinearLayout>
+

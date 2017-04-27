@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginBottom="1dp"
+    android:paddingBottom="@dimen/view_small_margin_s"
+    android:background="@drawable/layout_click_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--&lt;!&ndash; 预约相关 &ndash;&gt;-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_item_balance_order"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_item_balance_order_icon"-->
+            <!--android:layout_margin="@dimen/view_small_margin"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--&lt;!&ndash; 行为（收入/提现等）&ndash;&gt;-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_item_balance_order_action"-->
+            <!--style="@style/TextContentDark"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash; 其他类型 &ndash;&gt;-->
+
+
+    <ImageView
+        android:id="@+id/iv_item_balance_icon"
+        android:layout_margin="@dimen/view_small_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 行为（收入/提现等）-->
+    <TextView
+        android:id="@+id/tv_item_balance_action"
+        style="@style/TextContentDark"
+        android:layout_marginTop="@dimen/view_small_margin_l"
+        android:layout_toRightOf="@+id/iv_item_balance_icon"
+        android:layout_toEndOf="@+id/iv_item_balance_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 金额 -->
+    <TextView
+        android:id="@+id/tv_item_balance_amount"
+        android:textSize="@dimen/text_size_content_large"
+        android:textColor="@color/text_color_dark"
+        android:layout_marginTop="@dimen/view_small_margin_l"
+        android:layout_marginEnd="@dimen/view_default_margin_s"
+        android:layout_marginRight="@dimen/view_default_margin_s"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 状态（与金额位置重叠，字体小） -->
+    <TextView
+        android:id="@+id/tv_item_balance_status"
+        style="@style/TextContentDark"
+        android:layout_marginTop="@dimen/view_small_margin_l"
+        android:layout_marginEnd="@dimen/view_default_margin_s"
+        android:layout_marginRight="@dimen/view_default_margin_s"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 日期-->
+    <TextView
+        android:id="@+id/tv_item_balance_date"
+        android:textSize="@dimen/text_size_content_small"
+        android:textColor="@color/text_color_light"
+        android:layout_below="@+id/tv_item_balance_amount"
+        android:layout_marginEnd="@dimen/view_default_margin_s"
+        android:layout_marginRight="@dimen/view_default_margin_s"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 剩余金额-->
+    <TextView
+        android:id="@+id/tv_item_balance_fund"
+        android:textSize="@dimen/text_size_content_small"
+        android:textColor="@color/text_color_dark"
+        android:layout_alignLeft="@+id/tv_item_balance_action"
+        android:layout_alignStart="@+id/tv_item_balance_action"
+        android:layout_alignTop="@+id/tv_item_balance_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

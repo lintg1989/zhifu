@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.zheft.www.zheft.ui.FindDetailActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+    
+    <ProgressBar
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progress_bar_find_detail"
+        android:layout_width="match_parent"
+        android:layout_height="4dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_find_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

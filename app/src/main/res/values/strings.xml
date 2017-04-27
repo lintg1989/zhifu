@@ -1,0 +1,320 @@
+<resources>
+    <string name="app_name">浙付通</string>
+
+    <!-- MainActivity -->
+    <string name="double_press_back_exit">再次按返回键退出</string>
+
+    <string name="commit">提交</string>
+    <string name="ensure">确定</string>
+    <string name="cancle">取消</string>
+
+
+    <!-- 登录、认领-->
+    <string name="input_pos_phone">请输入商户手机号</string>
+    <string name="input_password">请输入6-12位字母或数字</string>
+
+    <string name="claim">认领</string>
+    <string name="login">登录</string>
+    <string name="next_step">下一步</string>
+    <string name="login_directly">直接登录</string>
+    <string name="input_username">请输入用户名</string>
+    <string name="input_password_twice">请再次输入密码</string>
+    <string name="check_user_info">信息核对</string>
+    <string name="check_mer_legal_name">法人姓名</string>
+    <string name="check_merchant_name">商户名</string>
+    <string name="check_paper_number">证件号</string>
+    <string name="check_account_no">开户账号</string>
+    <string name="set_password">设置密码</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="claim_pos_user">POS用户认领</string>
+    <string name="register_qrcode_user">二维码收款申请</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="input_verify_code">请输入验证码</string>
+    <string name="verify_time_left"> %1$d s</string>
+    <string name="claim_instruction">认领说明</string>
+    <string name="claim_agreement">认领即同意</string>
+    <string name="user_agreement">用户协议</string>
+    <string name="fns_user_agreement">《法奈昇用户协议》</string>
+    <string name="input_your_pos_phone_no">请输入您注册POSP系统的手机号</string>
+    <string name="input_phone_no">请输入您的手机号</string>
+    <string name="you_are_not_posp_user">该手机号不属于POSP商户</string>
+    <string name="set_pattern_lock">绘制手势密码</string>
+    <string name="set_pattern_lock_twice">再次绘制手势密码</string>
+    <string name="please_reset_pattern">手势密码不一致，请重新绘制</string>
+    <string name="skip_set_pattern">跳过</string>
+    <string name="skip">跳过</string>
+
+    <string name="send_verify_code">验证码已发送</string>
+
+    <string name="prompt_no_phone">请输入手机号</string>
+    <string name="prompt_no_password">请输入密码</string>
+    <string name="prompt_no_verify_code">请输入验证码</string>
+    <string name="prompt_no_password_ensure">请再次输入密码</string>
+    <string name="prompt_different_password">密码不一致，请重新输入</string>
+
+    <!-- 账户模块-->
+    <string name="account_balance">余额</string>
+    <string name="account_init_amount">0.00</string>
+    <string name="account_income_month">当月交易额(元)</string>
+    <string name="account_income_yesterday">昨日交易额(元)</string>
+    <string name="account_income_today">今日交易额 (元)</string>
+    <string name="account_can_withdraw">可提现余额\t</string>
+    <string name="account_cashout">提现</string>
+    <string name="account_detail">明细</string>
+    <string name="account_count">统计</string>
+    <string name="account_qrcode">二维码收款</string>
+    <string name="account_qrcode_not_open">您尚未开通二维码收款，请联系客服电话：400-1818-823</string>
+    <!-- 交易情况 -->
+    <string name="pay_input_amount">消费总金额</string>
+    <string name="pay_input_scan">扫码收款</string>
+    <string name="pay_input_code">二维码收款</string>
+    <string name="pay_select_title">选择收款方式</string>
+    <string name="pay_select_alipay_show">生成支付宝收款码</string>
+    <string name="pay_select_wechat_show">生成微信收款码</string>
+    <string name="pay_select_alipay_scan">扫描支付宝付款码</string>
+    <string name="pay_select_wechat_scan">扫描微信付款码</string>
+    <string name="pay_received_title">交易详情</string>
+    <string name="pay_received_finish">完成</string>
+    <string name="pay_received_success">交易完成</string>
+    <string name="pay_received_waiting">等待支付</string>
+    <string name="pay_received_failure">交易失败</string>
+    <string name="pay_received_closed">交易关闭</string>
+    <string name="pay_received_amount">订单金额</string>
+    <string name="pay_received_pay_type">支付方式</string>
+    <string name="pay_received_create_time">创建时间</string>
+    <string name="pay_received_pay_time">付款时间</string>
+    <string name="pay_received_pay_status">交易状态</string>
+    <string name="pay_received_fail_reason">失败原因</string>
+    <string name="pay_received_code">交易号</string>
+    <!-- 账户提现等 -->
+    <string name="balance_account_hint">账户余额(元)</string>
+    <string name="balance_year_ago">查询更多，请咨询客服</string>
+    <string name="withdraw_detail_type_income">刷卡收入</string>
+    <string name="withdraw_detail_type_outcome">提现</string>
+    <string name="cash_order_withdraw">预约提现</string>
+    <string name="cash_order_all_balance">全部金额</string>
+    <string name="cash_order_select_date">预约提现日期</string>
+    <string name="cash_order_amount">预约提现金额</string>
+    <string name="cashout_bankcard">储蓄卡</string>
+    <string name="cashout_amount">提现金额</string>
+    <string name="cashout_amount_can_use">可转出余额</string>
+    <string name="cashout_ok">确定转出</string>
+    <string name="cashout_instruction">
+        提现申请后结算时间约为2小时(工作时间9:00-18:00)，其他时间段提现次日24:00前到账。\n\n单笔限额____，本日还可转出____次\n\n当天POS机余额收入不能提取。
+    </string>
+
+    <!-- MeFrag 个人中心模块-->
+    <string name="my_messages">我的消息</string>
+    <string name="my_devices">设备信息</string>
+    <string name="logout">退出登录</string>
+
+    <!-- 设备详情-->
+    <string name="device_name">设备名</string>
+    <string name="device_detail">设备详情</string>
+    <string name="device_company">厂家</string>
+    <string name="device_code">机具型号</string>
+    <string name="device_sn">SN码</string>
+    <string name="device_sim_code">SIM卡SN号</string>
+    <string name="device_detail_menu_edit">编辑</string>
+    <string name="device_detail_menu_save">保存</string>
+
+    <string name="message_detail">消息详情</string>
+    <string name="bankcards_info">银行卡信息</string>
+    <string name="my_bankcards">我的银行卡</string>
+    <string name="helps_and_feedback">帮助与反馈</string>
+    <string name="common_problem">常见问题</string>
+    <string name="problem_detail">问题详情</string>
+    <string name="feedbacks">意见反馈</string>
+    <string name="contact_us">联系我们</string>
+    <string name="service_tele">客服电话</string>
+    <string name="wechat_service">客服微信号</string>
+    <string name="wechat_public">公众号</string>
+    <string name="company_website">公司网站</string>
+    <string name="company_address">公司地址</string>
+    <string name="about_us">关于我们</string>
+    <string name="version_code">版本号&#160;</string>
+    <string name="settings">设置</string>
+    <string name="feedback_type">反馈类型</string>
+    <string name="select_feedback_type">请选择反馈的类型</string>
+
+    <string name="change_password">修改密码</string>
+    <string name="change_login_pwd">修改登录密码</string>
+    <string name="change_pattern_lock">修改手势密码</string>
+    <string name="old_password">原始密码</string>
+    <string name="new_password">设置新密码</string>
+    <string name="confirm_new_password">确认新密码</string>
+    <string name="please_input_old_pwd">请输入您的原始密码</string>
+    <string name="please_input_new_pwd">请输入您的新密码</string>
+    <string name="please_input_pay_pwd">请输入6位支付密码</string>
+    <string name="please_confirm_pay_pwd">请输入确认密码</string>
+    <string name="please_confirm_new_pwd">请确认您的新密码</string>
+    <string name="old_psw_error">原始密码错误，请重试</string>
+    <string name="password_changed_to_relogin">密码已更改，请重新登录</string>
+
+    <!-- 支付密码相关 -->
+    <string name="pay_dialog_cash_out">提现</string>
+    <string name="pay_dialog_forget_pwd">忘记密码？</string>
+    <string name="verify_code">验证码</string>
+    <string name="pay_password">支付密码</string>
+    <string name="pay_password_confirm">确认密码</string>
+    <string name="input_pay_password">请输入支付密码</string>
+    <string name="change_pay_password">修改支付密码</string>
+    <string name="set_pay_password">设置支付密码</string>
+    <string name="forget_pay_password">忘记支付密码</string>
+
+    <string name="message_push">消息推送</string>
+    <string name="message_push_receive">接收消息提醒</string>
+    <string name="message_push_sound">声音</string>
+    <string name="message_push_vibrate">震动</string>
+
+    <string name="pattern_lock_manager">手势密码管理</string>
+    <string name="draw_pattern">绘制手势密码</string>
+    <string name="pattern_lock">手势密码</string>
+    <string name="show_pattern_lock">显示手势轨迹</string>
+    <string name="forget_pattern_lock">忘记手势密码</string>
+    <string name="uncorrect_pattern_lock">手势密码不正确，剩余尝试次数%d次</string>
+
+    <string name="call_service_tele">拨打客服电话</string>
+    <string name="no_call_permission">没有拨打电话的权限</string>
+    <string name="service_tele_no_show">400 1818 823</string>
+    <string name="service_tele_no">4001818823</string>
+    <string name="wechat_service_no">zhefutong</string>
+    <string name="wechat_public_no">浙付通</string>
+    <string name="company_website_text">www.fnsco.net</string>
+    <string name="company_address_text">浙江省杭州市萧山区杭州湾信息港C座601</string>
+
+    <string name="company_introduction">
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;杭州法奈昇科技有限公司是一家拥有自主开发移动金融平台、以高频交易数据为基础的大数据科技公司。公司的业务范围涉猎多项金融服务，并在业内首次提出“一站式金融服务解决方案”的全新概念。
+        \n\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;公司秉持科技驱动财富的理念，为科技、文创型企业推出多样性的金融服务解决方案，帮助有能力、有潜力的科技、文创型企业渡过发展难关，快速发展。
+        \n\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;在互联网发展降速的背景下，公司力图打造科技、行业、金融三位一体的全新生态圈，期待在未来成为国内领先的金融服务解决方案提供商，引领供应链金融3.0的浪潮。
+    </string>
+    <string name="claim_instruction_content">
+        浙付通APP暂不开放对外注册服务；浙付通用户第一次登录APP需要进行认领激活账号，账号为POS机绑定的手机号码。认领激活成功后，可直接进行账号的登录操作。\n\n感谢您的使用！
+    </string>
+
+    <!--<string name="hello_blank_fragment">Hello blank fragment</string>-->
+
+    <!-- 主页 -->
+    <string name="home_qrcode_scan">扫一扫</string>
+    <string name="home_qrcode_code">收款码</string>
+
+    <!-- Pos页相关-->
+    <string name="pos_select_device">设备筛选</string>
+    <string name="pos_select_date">选择日期</string>
+
+    <string name="yuan">¥&#160;</string>
+    <string name="yuan_zh">&#160;元</string>
+
+    <!-- 新流水 -->
+    <string name="trade_select">筛选</string>
+    <string name="trade_select_date">选择日期</string>
+    <string name="trade_no_data">暂无交易信息</string>
+    <string name="select_date_week">1周内</string>
+    <string name="select_date_month">1个月内</string>
+    <string name="select_date_season">3个月内</string>
+    <string name="trade_select_device">选择设备</string>
+    <string name="select_device_label_all_name">全部</string>
+    <string name="select_device_label_all_code">all</string>
+    <string name="select_device_label_qr_name">二维码付款</string>
+    <string name="selcet_device_label_qr_code">QRCode</string>
+
+    <string name="pay_input_income_from_wechat">微信收款</string>
+    <string name="pay_input_income_from_alipay">支付宝收款</string>
+
+    <!-- pos收据单-->
+    <string name="home_title">首页</string>
+    <string name="pos_search">搜索</string>
+    <string name="account_title">账户</string>
+    <string name="find_title">发现</string>
+    <string name="count_title">统计</string>
+    <string name="mine_title">我的</string>
+    <string name="pos_receipt">电子收据</string>
+    <string name="merchant_id">商户编号</string>
+    <string name="merchant_name">商户名称</string>
+    <string name="terminal_code">终端编号</string>
+    <string name="operator_code">操作员号</string>
+    <string name="from_bank_num">发卡行号</string>
+    <string name="to_bank_num">收单行号</string>
+    <string name="bankcard_num">卡号</string>
+    <string name="trade_type">交易类型</string>
+    <string name="exp_time">有效期</string>
+    <string name="batch_code">批次号</string>
+    <string name="doc_code">凭证号</string>
+    <string name="ref_code">参考号</string>
+    <string name="trade_date">交易日期</string>
+    <string name="trade_amount">交易金额</string>
+    <string name="failed_reason">失败原因</string>
+
+    <!-- 预约提现 -->
+    <string name="order_withdraw">预约提现</string>
+    <string name="order_withdraw_title">详情</string>
+    <string name="order_withdraw_cancel">取消预约</string>
+
+    <!-- 账户页-->
+    <string name="trade_num_total">交易笔数总计</string>
+    <string name="trade_amount_total">交易总额</string>
+    <string name="trade_amount_pos">POS消费</string>
+    <string name="trade_amount_qrcode">二维码支付</string>
+    <string name="trade_num_sub">交易笔数</string>
+
+    <string name="start_date">开始日期</string>
+    <string name="end_date">结束日期</string>
+    <string name="count_search">查询</string>
+    <string name="count_chart_title">七日交易统计</string>
+    <string name="count_search_title">POS消费、二维码支付统计查询</string>
+
+    <!-- 发现页 -->
+    <string name="find_no_data">我们正在努力加载，请稍等一会～</string>
+
+    <!-- 红包页-->
+    <string name="hongbao_before">浙付通给您发了一个红包</string>
+    <string name="hongbao_after">浙付通的红包</string>
+    <string name="hongbao_back">返回</string>
+    <string name="hongbao_detail">查看明细</string>
+    <string name="hongbao_yuan">元</string>
+    <string name="hongbao">红包</string>
+
+    <!-- 各种adapter所用item布局的初始值-->
+    <string name="item_foot_loading">加载中…</string>
+    <string name="item_foot_empty">没有更多了</string>
+    <string name="item_foot_net">网络异常，请重试</string>
+    <string name="item_device">设备</string>
+    <string name="item_device_selected">选择此设备</string>
+    <string name="item_pos_status_true">交易成功</string>
+    <string name="item_pos_status_false">交易失败</string>
+    <string name="item_bankcard_type">储蓄卡</string>
+
+    <!-- 证件上传 -->
+    <string name="upload_card">证件上传</string>
+    <string name="shop_photo">店铺照片</string>
+
+
+    <!-- 输入限制-->
+    <string name="char_phone_number">0123456789</string>
+    <string name="char_verify_number">0123456789</string>
+    <string name="char_password">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="char_password_pay">0123456789</string>
+
+    <!-- ################ 各种错误提示 ################ -->
+    <string name="error_service_response">response未知错误，待查</string>
+    <string name="error_poor_network_environment">暂时无法连接到服务器，请稍后再试</string>
+    <string name="error_you_changed_phone_number">您的手机号已改动\n请重新获取验证码</string>
+    <string name="error_illegal_phone_and_code">请返回重设手机号并获取验证码</string>
+    <string name="error_different_password">两次输入的密码不一致</string>
+
+    <string name="error_unknown">未知错误</string>
+
+    <!-- 调试服务器版本标识-->
+    <string name="test_debug_server">"版    本：Debug\n服务器："</string>
+    <!-- 测试用显示数据-->
+    <string name="test_string_num">12345678</string>
+    <string name="test_string_char">测试用</string>
+    <string name="title_activity_upload_card_first">UploadCardFirstActivity</string>
+    <string name="title_activity_upload_card_second">UploadCardSecondActivity</string>
+    <string name="title_activity_take_phone">TakePhoneActivity</string>
+    <string name="title_activity_show_croppered">ShowCropperedActivity</string>
+    <string name="title_activity_preview">PreviewActivity</string>
+    <string name="title_activity_shop_photo_first">ShopPhotoFirstActivity</string>
+    <string name="title_activity_shop_photo_second">ShopPhotoSecondActivity</string>
+
+</resources>

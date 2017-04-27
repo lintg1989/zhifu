@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.zheft.www.zheft.ui.HongbaoActivity">
+
+    <!-- 背景画布-->
+    <RelativeLayout
+        android:id="@+id/rl_hongbao_bg"
+        android:background="@color/hongbao_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_hongbao_head_before"
+            android:src="@mipmap/hongbao_head_before"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_hongbao_back"
+            android:visibility="invisible"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/hongbao_padding_default"
+            android:paddingBottom="@dimen/hongbao_padding_small"
+            android:paddingLeft="@dimen/hongbao_padding_small"
+            android:paddingRight="@dimen/hongbao_padding_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/hongbao_back"
+                android:paddingRight="@dimen/hongbao_padding_small"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/hongbao_back"
+                android:textSize="@dimen/text_size_content"
+                android:textColor="@color/hongbao_text_orange"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_hongbao_mid"
+            android:layout_below="@+id/iv_hongbao_head_before"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- 浙付通红包文字-->
+            <TextView
+                android:id="@+id/tv_hongbao_mid"
+                android:text="@string/hongbao_before"
+                android:textSize="@dimen/text_size_hongbao_small"
+                android:textColor="@color/total_white"
+                android:layout_marginTop="@dimen/hongbao_padding_default"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- 红包面额-->
+            <RelativeLayout
+                android:id="@+id/rl_hongbao_amount"
+                android:visibility="gone"
+                android:layout_below="@+id/tv_hongbao_mid"
+                android:layout_marginTop="@dimen/hongbao_padding_default"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_hongbao_amount"
+                    android:text="0.00"
+                    android:textSize="@dimen/text_size_hongbao_large"
+                    android:textColor="@color/text_color_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_toRightOf="@+id/tv_hongbao_amount"
+                    android:layout_alignBaseline="@+id/tv_hongbao_amount"
+                    android:text="@string/hongbao_yuan"
+                    android:textSize="@dimen/text_size_hongbao_middle"
+                    android:textColor="@color/text_color_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- 红包按钮和查看明细部分-->
+        <RelativeLayout
+            android:layout_below="@+id/rl_hongbao_mid"
+            android:layout_above="@+id/iv_hongbao_under"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_hongbao_open"
+                android:background="@drawable/hongbao_button_selector"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/tv_hongbao_detail"
+                android:text="@string/hongbao_detail"
+                android:textColor="@color/hongbao_text_blue"
+                android:paddingBottom="@dimen/hongbao_padding_small"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_hongbao_under"
+            android:src="@mipmap/hongbao_under"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="@dimen/hongbao_padding_default"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 关于我们页-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.zheft.www.zheft.ui.AboutActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/about_us_padding_large"
+        android:background="@color/bg_color_under"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginBottom="@dimen/about_us_padding"
+            android:src="@mipmap/zheft_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/TextContentDark"
+            android:id="@+id/tv_about_version"
+            tools:text="版本号 0.0.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/divide_line_full"/>
+
+    <!-- 显示内容-->
+    <RelativeLayout
+        android:paddingTop="@dimen/about_us_padding_large"
+        android:paddingBottom="@dimen/about_us_padding_large"
+        android:paddingLeft="@dimen/about_us_padding"
+        android:paddingRight="@dimen/about_us_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/company_introduction"
+            android:textSize="@dimen/text_size_about_content"
+            android:textColor="@color/text_color_dark"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_full"/>
+
+    <include layout="@layout/layout_bg_under"/>
+
+</LinearLayout>

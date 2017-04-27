@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:background="@drawable/layout_click_selector"
+    android:paddingLeft="@dimen/clickbar_default_margin"
+    android:paddingRight="@dimen/clickbar_withimg_margin"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/clickbar_default_height">
+
+    <!-- 一个通用的可点击横条view，需要在java代码中设置text的值-->
+    <TextView
+        style="@style/TextContentDark"
+        android:id="@+id/tv_click_layout"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:src="@mipmap/next_btn"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+</RelativeLayout>

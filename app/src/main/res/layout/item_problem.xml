@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 常见问题列表项 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:background="@drawable/layout_click_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/tv_problem"
+        style="@style/TextContentDark"
+        android:lines="1"
+        android:ellipsize="end"
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:layout_toLeftOf="@+id/iv_problem_next"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height" />
+    <ImageView
+        android:id="@+id/iv_problem_next"
+        android:src="@mipmap/next_btn"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/clickbar_withimg_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/clickbar_default_height" />
+
+    <View
+        android:background="@color/divide_line_color"
+        android:layout_below="@+id/tv_problem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_line_height" />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_item_footer_balance"
+        android:gravity="center"
+        android:text="@string/item_foot_empty"
+        android:textSize="@dimen/text_size_list_footer"
+        android:textColor="@color/text_color_light"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_footer_height" />
+
+</RelativeLayout>

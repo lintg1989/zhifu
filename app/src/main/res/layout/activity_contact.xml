@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.zheft.www.zheft.ui.ContactActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <!-- 客服电话-->
+    <RelativeLayout
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/service_tele"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_service_tele"
+            android:text="@string/service_tele_no_show"
+            android:textSize="@dimen/text_size_content"
+            android:textColor="@color/text_color_clickable"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_short"/>
+
+    <!-- 微信服务号-->
+    <RelativeLayout
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/wechat_service"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            style="@style/TextContentLight"
+            android:text="@string/wechat_service_no"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_short"/>
+
+    <!-- 公众号-->
+    <RelativeLayout
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/wechat_public"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            style="@style/TextContentLight"
+            android:text="@string/wechat_public_no"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_full"/>
+
+    <View
+        android:background="@color/bg_color_under"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contect_divide_view"/>
+
+    <!-- 公司网站-->
+    <RelativeLayout
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/company_website"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            style="@style/TextContentLight"
+            android:id="@+id/tv_website"
+            android:text="@string/company_website_text"
+            android:textSize="@dimen/text_size_content"
+            android:textColor="@color/text_color_clickable"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_short"/>
+
+    <!-- 公司地址-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_default_margin"
+        android:paddingTop="@dimen/clickbar_default_margin"
+        android:paddingBottom="@dimen/clickbar_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/company_address"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/TextContentLight"
+            android:text="@string/company_address_text"
+            android:singleLine="false"
+            android:layout_marginTop="@dimen/contect_address_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/divide_line_full"/>
+
+    <!-- 填充底色-->
+    <include layout="@layout/layout_bg_under"/>
+</LinearLayout>

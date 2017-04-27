@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/pos_detail_padding"
+    android:layout_marginLeft="@dimen/pos_detail_padding"
+    android:layout_marginRight="@dimen/pos_detail_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 上边锯齿-->
+    <View
+        android:background="@drawable/pos_detail_sawtooth_up"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:background="@drawable/pos_detail_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginTop="@dimen/pos_detail_logo_padding"
+            android:layout_marginBottom="@dimen/pos_detail_logo_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_pos_detail_logo"
+                android:src="@mipmap/pos_detail_logo"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/pos_detail_logo_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/iv_failed_logo"
+                android:src="@mipmap/pos_detail_failed_logo"
+                android:visibility="invisible"
+                android:paddingLeft="@dimen/pos_detail_logo_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <View
+            android:layerType="software"
+            android:background="@drawable/stroke_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_dotted_line" />
+
+        <!-- 失败原因-->
+        <LinearLayout
+            android:id="@+id/llayout_pos_detail_reason"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/pos_detail_padding"
+            android:paddingRight="@dimen/pos_detail_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_text_height">
+            <TextView
+                style="@style/TextPosDetailLight"
+                android:text="@string/failed_reason"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textSize="@dimen/text_size_content_small"
+                android:textColor="@color/pos_status_false_color"
+                android:id="@+id/tv_trade_failed"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <!-- 商户编号-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/pos_detail_padding"
+            android:paddingRight="@dimen/pos_detail_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_text_height">
+            <TextView
+                style="@style/TextPosDetailLight"
+                android:text="@string/merchant_id"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextPosDetailDark"
+                android:id="@+id/tv_merchant_id"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- 商户名称-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/pos_detail_padding"
+            android:paddingRight="@dimen/pos_detail_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_text_height">
+            <TextView
+                style="@style/TextPosDetailLight"
+                android:text="@string/merchant_name"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextPosDetailDark"
+                android:id="@+id/tv_merchant_name"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- 终端编号-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/pos_detail_padding"
+            android:paddingRight="@dimen/pos_detail_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_text_height">
+            <TextView
+                style="@style/TextPosDetailLight"
+                android:text="@string/terminal_code"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextPosDetailDark"
+                android:id="@+id/tv_terminal_code"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- 操作员号-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/pos_detail_padding"
+            android:paddingRight="@dimen/pos_detail_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_text_height">
+            <TextView
+                style="@style/TextPosDetailLight"
+                android:text="@string/operator_code"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextPosDetailDark"
+                android:id="@+id/tv_operator_code"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:layerType="software"
+            android:background="@drawable/stroke_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_dotted_line" />
+
+        <!-- 发卡行号-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/pos_detail_padding"
+            android:paddingRight="@dimen/pos_detail_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_text_height">
+            <TextView
+                style="@style/TextPosDetailLight"
+                android:text="@string/from_bank_num"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextPosDetailDark"
+                android:id="@+id/tv_from_bank"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- 收单行号-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/pos_detail_padding"
+            android:paddingRight="@dimen/pos_detail_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_text_height">
+            <TextView
+                style="@style/TextPosDetailLight"
+                android:text="@string/to_bank_num"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextPosDetailDark"
+                android:id="@+id/tv_to_bank"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- 卡号-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/pos_detail_padding"
+            android:paddingRight="@dimen/pos_detail_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_text_height">
+            <TextView
+                style="@style/TextPosDetailLight"
+                android:text="@string/bankcard_num"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_bankcard_num"
+                android:textSize="@dimen/text_size_pos_detail_cardnum"
+                android:textColor="@color/text_color_dark"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- 交易类别-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/pos_detail_padding"
+            android:paddingRight="@dimen/pos_detail_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_text_height">
+            <TextView
+                style="@style/TextPosDetailLight"
+                android:text="@string/trade_type"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextPosDetailDark"
+                android:id="@+id/tv_trade_type"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- 有效期-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/pos_detail_padding"
+            android:paddingRight="@dimen/pos_detail_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_text_height">
+            <TextView
+                style="@style/TextPosDetailLight"
+                android:text="@string/exp_time"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextPosDetailDark"
+                android:id="@+id/tv_exp_time"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- 批次号-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/pos_detail_padding"
+            android:paddingRight="@dimen/pos_detail_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_text_height">
+            <TextView
+                style="@style/TextPosDetailLight"
+                android:text="@string/batch_code"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextPosDetailDark"
+                android:id="@+id/tv_batch_code"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- 凭证号-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/pos_detail_padding"
+            android:paddingRight="@dimen/pos_detail_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_text_height">
+            <TextView
+                style="@style/TextPosDetailLight"
+                android:text="@string/doc_code"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextPosDetailDark"
+                android:id="@+id/tv_doc_code"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- 参考号-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/pos_detail_padding"
+            android:paddingRight="@dimen/pos_detail_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_text_height">
+            <TextView
+                style="@style/TextPosDetailLight"
+                android:text="@string/ref_code"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextPosDetailDark"
+                android:id="@+id/tv_ref_code"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:layerType="software"
+            android:background="@drawable/stroke_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_dotted_line" />
+
+        <!-- 交易日期-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/pos_detail_padding"
+            android:paddingRight="@dimen/pos_detail_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_text_height">
+            <TextView
+                style="@style/TextPosDetailLight"
+                android:text="@string/trade_date"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextPosDetailDark"
+                android:id="@+id/tv_trade_date"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- 交易金额-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/pos_detail_padding"
+            android:paddingRight="@dimen/pos_detail_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_text_height">
+            <TextView
+                style="@style/TextPosDetailLight"
+                android:text="@string/trade_amount"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_trade_amount"
+                android:textSize="@dimen/text_size_pos_detail_amount"
+                android:textColor="@color/text_color_dark"
+                android:gravity="center_vertical"
+                android:layout_weight="@integer/pos_detail_text_weight_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <View
+            android:layout_margin="@dimen/pos_detail_logo_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pos_detail_dotted_line" />
+    </LinearLayout>
+    <!-- 下边锯齿-->
+    <View
+        android:layout_marginBottom="@dimen/pos_detail_padding"
+        android:background="@drawable/pos_detail_sawtooth_down"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pos_detail_padding"/>
+
+</LinearLayout>

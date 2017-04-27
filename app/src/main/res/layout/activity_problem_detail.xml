@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.zheft.www.zheft.ui.ProblemDetailActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <TextView
+        android:id="@+id/text_error"
+        android:text="@string/error_unknown"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        style="@style/TextContentDark"
+        android:id="@+id/tv_problem_title"
+        android:minHeight="@dimen/clickbar_default_height"
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_default_margin"
+        android:gravity="center_vertical"
+        android:singleLine="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/divide_line_full" />
+
+    <TextView
+        android:id="@+id/tv_problem_content"
+        style="@style/TextContentDark"
+        android:padding="@dimen/clickbar_default_margin"
+        android:singleLine="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

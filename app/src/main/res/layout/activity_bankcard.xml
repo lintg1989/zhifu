@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.zheft.www.zheft.ui.BankcardActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <com.design.coderbeanliang.swipeloadrecyclerview.SwipeLoadRecyclerView
+        android:id="@+id/swipe_load_refresh_view_bankcard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

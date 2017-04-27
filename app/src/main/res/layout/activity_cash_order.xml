@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color_under"
+    tools:context="cn.zheft.www.zheft.ui.CashOrderActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cashout_padding_vertical" />
+
+    <!-- 储蓄卡-->
+    <include layout="@layout/divide_line_full" />
+    <RelativeLayout
+        android:id="@+id/rlayout_cash_order_bankcard"
+        android:background="@drawable/layout_click_selector"
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_withimg_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            android:id="@+id/tv_cash_order_card"
+            style="@style/TextContentDark"
+            android:text="@string/cashout_bankcard"
+            android:gravity="center_vertical"
+            android:layout_width="@dimen/cashout_prompt_width"
+            android:layout_height="match_parent" />
+        <TextView
+            android:onClick="toBankcard"
+            android:id="@+id/tv_cash_order_card_name"
+            tools:text="中国建设银行(7976)"
+            android:textSize="@dimen/text_size_content"
+            android:textColor="@color/text_color_cash_bankcard"
+            android:gravity="center_vertical|end"
+            android:layout_toRightOf="@+id/tv_cash_order_card"
+            android:layout_toEndOf="@+id/tv_cash_order_card"
+            android:layout_toStartOf="@+id/iv_cash_order_card_next"
+            android:layout_toLeftOf="@+id/iv_cash_order_card_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/iv_cash_order_card_next"
+            android:src="@mipmap/next_btn"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_full" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cashout_padding_vertical_small" />
+
+    <!-- 转出金额-->
+    <include layout="@layout/divide_line_full" />
+
+    <RelativeLayout
+        android:id="@+id/rlayout_cash_order_amount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height"
+        android:background="@drawable/layout_click_selector"
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_withimg_margin">
+
+        <TextView
+            android:id="@+id/tv_cash_order_amount"
+            style="@style/TextContentDark"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/cash_order_amount" />
+
+        <TextView
+            android:onClick="cashOrderAmount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/tv_cash_order_amount"
+            android:layout_toRightOf="@+id/tv_cash_order_amount"
+            android:background="@color/transparent"
+            android:gravity="center_vertical|end"
+            android:paddingEnd="@dimen/view_small_margin"
+            android:paddingRight="@dimen/view_small_margin"
+            android:text="@string/cash_order_all_balance"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_size_content" />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line_full" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_large_margin_l" />
+
+    <!-- 预约时间-->
+    <include layout="@layout/divide_line_full" />
+    <RelativeLayout
+        android:id="@+id/rlayout_cash_order_date"
+        android:background="@drawable/layout_click_selector"
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_withimg_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/cash_order_select_date"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            tools:text="2月17"
+            android:id="@+id/tv_cash_order_date"
+            style="@style/TextContentLight"
+            android:onClick="selectDate"
+            android:clickable="true"
+            android:gravity="center_vertical|end"
+            android:layout_toStartOf="@+id/iv_cash_order_date_next"
+            android:layout_toLeftOf="@+id/iv_cash_order_date_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/iv_cash_order_date_next"
+            android:src="@mipmap/next_btn"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_full" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_top_margin_large" />
+
+    <!-- 确认按钮-->
+    <Button
+        style="@style/ButtonTheme"
+        android:id="@+id/btn_cash_order"
+        android:onClick="cashOrder"
+        android:text="@string/cashout_ok"
+        android:layout_margin="@dimen/button_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_default_height" />
+
+    <!-- 提现说明-->
+    <TextView
+        style="@style/TextContentLight"
+        android:id="@+id/tv_cash_order_instruction"
+        android:layout_margin="@dimen/page_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

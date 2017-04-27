@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/divide_line_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <cn.zheft.www.zheft.view.SquareTextView
+            android:id="@+id/stv_input_one"
+            android:onClick="onPayInputClick"
+            android:clickable="true"
+            style="@style/TextContentDark"
+            android:text="1"
+            android:background="@color/bg_color_under"
+            android:layout_margin="0.5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <cn.zheft.www.zheft.view.SquareTextView
+            android:id="@+id/stv_input_four"
+            android:onClick="onPayInputClick"
+            android:clickable="true"
+            style="@style/TextContentDark"
+            android:text="4"
+            android:background="@color/bg_color_under"
+            android:layout_margin="0.5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <cn.zheft.www.zheft.view.SquareTextView
+            android:id="@+id/stv_input_seven"
+            android:onClick="onPayInputClick"
+            android:clickable="true"
+            style="@style/TextContentDark"
+            android:text="7"
+            android:background="@color/bg_color_under"
+            android:layout_margin="0.5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <cn.zheft.www.zheft.view.SquareTextView
+            android:id="@+id/stv_input_zero"
+            android:onClick="onPayInputClick"
+            android:clickable="true"
+            style="@style/TextContentDark"
+            android:text="0"
+            android:background="@color/bg_color_under"
+            android:layout_margin="0.5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+    </LinearLayout>
+
+    <!-- 第二列 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <cn.zheft.www.zheft.view.SquareTextView
+            android:id="@+id/stv_input_two"
+            android:onClick="onPayInputClick"
+            android:clickable="true"
+            style="@style/TextContentDark"
+            android:text="2"
+            android:background="@color/bg_color_under"
+            android:layout_margin="0.5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <cn.zheft.www.zheft.view.SquareTextView
+            android:id="@+id/stv_input_five"
+            android:onClick="onPayInputClick"
+            android:clickable="true"
+            style="@style/TextContentDark"
+            android:text="5"
+            android:background="@color/bg_color_under"
+            android:layout_margin="0.5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <cn.zheft.www.zheft.view.SquareTextView
+            android:id="@+id/stv_input_eight"
+            android:onClick="onPayInputClick"
+            android:clickable="true"
+            style="@style/TextContentDark"
+            android:text="8"
+            android:background="@color/bg_color_under"
+            android:layout_margin="0.5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <cn.zheft.www.zheft.view.SquareTextView
+            android:id="@+id/stv_input_dot"
+            android:onClick="onPayInputClick"
+            android:clickable="true"
+            style="@style/TextContentDark"
+            android:text="."
+            android:background="@color/bg_color_under"
+            android:layout_margin="0.5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+    </LinearLayout>
+
+    <!-- 第三列 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <cn.zheft.www.zheft.view.SquareTextView
+            android:id="@+id/stv_input_three"
+            android:onClick="onPayInputClick"
+            android:clickable="true"
+            style="@style/TextContentDark"
+            android:text="3"
+            android:background="@color/bg_color_under"
+            android:layout_margin="0.5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <cn.zheft.www.zheft.view.SquareTextView
+            android:id="@+id/stv_input_six"
+            android:onClick="onPayInputClick"
+            android:clickable="true"
+            style="@style/TextContentDark"
+            android:text="6"
+            android:background="@color/bg_color_under"
+            android:layout_margin="0.5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <cn.zheft.www.zheft.view.SquareTextView
+            android:id="@+id/stv_input_nine"
+            android:onClick="onPayInputClick"
+            android:clickable="true"
+            style="@style/TextContentDark"
+            android:text="9"
+            android:background="@color/bg_color_under"
+            android:layout_margin="0.5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <cn.zheft.www.zheft.view.SquareTextView
+            android:id="@+id/stv_input_add"
+            android:onClick="onPayInputClick"
+            android:clickable="true"
+            style="@style/TextContentDark"
+            android:text="+"
+            android:background="@color/bg_color_under"
+            android:layout_margin="0.5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+    </LinearLayout>
+
+    <!-- 第二列 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <cn.zheft.www.zheft.view.SquareTextView
+            android:id="@+id/stv_input_delete"
+            android:onClick="onPayInputClick"
+            android:clickable="true"
+            android:textSize="@dimen/text_size_content"
+            android:textColor="@color/total_white"
+            android:text="删除"
+            android:background="@color/colorAccent"
+            android:layout_margin="0.5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <cn.zheft.www.zheft.view.SquareTextView
+            android:id="@+id/stv_input_clear"
+            android:onClick="onPayInputClick"
+            android:clickable="true"
+            android:textSize="@dimen/text_size_content"
+            android:textColor="@color/total_white"
+            android:text="清空"
+            android:background="@color/colorAccent"
+            android:layout_margin="0.5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+        <cn.zheft.www.zheft.view.SquareTextView
+            android:id="@+id/stv_input_ensure"
+            android:onClick="onPayInputClick"
+            android:clickable="true"
+            android:textSize="@dimen/text_size_content"
+            android:textColor="@color/total_white"
+            android:text="收款"
+            android:background="@color/colorAccent"
+            android:layout_margin="0.5dp"
+            android:gravity="center"
+            app:row="2"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp" />
+    </LinearLayout>
+
+</LinearLayout>

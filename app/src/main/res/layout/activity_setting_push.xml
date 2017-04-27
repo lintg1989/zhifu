@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.zheft.www.zheft.ui.SettingPushActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <!-- 接收消息提醒-->
+    <RelativeLayout
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_withimg_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/message_push_receive"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Switch
+            android:id="@+id/switch_msg_receive"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="true" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_full" />
+
+    <View
+        android:background="@color/bg_color_under"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/message_push_padding" />
+
+    <!-- 声音-->
+    <RelativeLayout
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_withimg_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/message_push_sound"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Switch
+            android:id="@+id/switch_msg_sound"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="true" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_short" />
+    <!-- 接收消息提醒-->
+    <RelativeLayout
+        android:paddingLeft="@dimen/clickbar_default_margin"
+        android:paddingRight="@dimen/clickbar_withimg_margin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clickbar_default_height">
+        <TextView
+            style="@style/TextContentDark"
+            android:text="@string/message_push_vibrate"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Switch
+            android:id="@+id/switch_msg_vibrate"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="true" />
+    </RelativeLayout>
+    <include layout="@layout/divide_line_full" />
+
+    <View
+        android:background="@color/bg_color_under"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

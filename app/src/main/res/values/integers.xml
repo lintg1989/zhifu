@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 小票详情页 text 权值-->
+    <integer name="pos_detail_text_weight_left">3</integer>
+    <integer name="pos_detail_text_weight_right">7</integer>
+
+    <!-- 加载进度淡入淡出动画-->
+    <integer name="progress_dialog_anim_duration_scale">60</integer>
+    <integer name="progress_dialog_anim_duration_alpha">100</integer>
+    <integer name="progress_dialog_duration">200</integer>
+
+    <!-- 手势密码 reset时间-->
+    <integer name="gesture_lock_reset_time">600</integer>
+</resources>

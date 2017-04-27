@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_pay_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.zheft.www.zheft.ui.PayInputActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="@dimen/view_small_margin"
+            android:background="@color/pay_input_amount_bg"
+            android:layout_above="@+id/view_pay_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/pay_input_amount"
+                android:textSize="@dimen/text_size_content_small"
+                android:textColor="@color/total_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_pay_input_amount"
+                android:textSize="36sp"
+                android:textColor="@color/total_white"
+                android:layout_margin="@dimen/view_small_margin"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <cn.zheft.www.zheft.view.PayInputView
+            android:id="@+id/view_pay_input"
+            android:background="@color/pay_input_bg"
+            android:layout_above="@+id/ll_pay_input_way"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_pay_input_way"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pay_input_select_way_height">
+
+            <!-- 微信 -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/pay_input_wechat"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/ll_pay_input_wechat"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:background="@drawable/layout_click_mask"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@mipmap/pay_icon_wechat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="@string/pay_input_income_from_wechat"
+                        android:textSize="@dimen/text_size_content"
+                        android:textColor="@color/total_white"
+                        android:layout_marginLeft="@dimen/view_small_margin"
+                        android:layout_marginStart="@dimen/view_small_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 支付宝 -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/pay_input_alipay"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/ll_pay_input_alipay"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:background="@drawable/layout_click_mask"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@mipmap/pay_icon_alipay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="@string/pay_input_income_from_alipay"
+                        android:textSize="@dimen/text_size_content"
+                        android:textColor="@color/total_white"
+                        android:layout_marginLeft="@dimen/view_small_margin"
+                        android:layout_marginStart="@dimen/view_small_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

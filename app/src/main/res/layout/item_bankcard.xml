@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 银行卡卡片布局-->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:foreground="?attr/selectableItemBackground"
+    card_view:cardBackgroundColor="@color/theme_color_app"
+    card_view:cardCornerRadius="@dimen/card_list_cornerradius"
+    card_view:cardElevation="@dimen/card_list_elevation"
+    android:layout_marginTop="@dimen/card_list_padding_vertical"
+    android:layout_marginLeft="@dimen/card_list_padding_horizontal"
+    android:layout_marginRight="@dimen/card_list_padding_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:paddingLeft="@dimen/card_list_padding_horizontal"
+        android:paddingRight="@dimen/card_list_padding_horizontal"
+        android:paddingTop="@dimen/card_list_padding_vertical"
+        android:paddingBottom="@dimen/card_list_padding_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_item_bankcard_icon"
+                android:src="@mipmap/bank18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                tools:text="@string/test_string_char"
+                android:id="@+id/tv_item_bankcard_name"
+                android:textSize="@dimen/text_size_content"
+                android:textColor="@color/bg_color_app"
+                android:paddingLeft="@dimen/card_list_padding_text"
+                android:paddingStart="@dimen/card_list_padding_text"
+                android:paddingTop="@dimen/card_list_padding_text"
+                android:layout_toRightOf="@+id/iv_item_bankcard_icon"
+                android:layout_toEndOf="@+id/iv_item_bankcard_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                tools:text="@string/test_string_num"
+                android:id="@+id/tv_item_bankcard_num"
+                android:textSize="@dimen/text_size_content"
+                android:textColor="@color/bg_color_app"
+                android:paddingTop="@dimen/card_list_padding_text"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/bg_color_app"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_line_height" />
+        <TextView
+            android:text="@string/item_bankcard_type"
+            android:textSize="@dimen/text_size_cards_list_type"
+            android:textColor="@color/bg_color_app"
+            android:paddingTop="@dimen/card_list_padding_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

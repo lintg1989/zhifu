@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- 公用的自定义标题居中toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ToolbarStyle"
+        toolbar:title=" " >
+        <!-- title必须使用自定义的命名空间，且title设为“”会显示appname-->
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:textSize="@dimen/text_size_title"
+            android:textColor="@color/text_color_dark"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/toolbar_line"
+        android:background="@color/divide_line_color"
+        android:layout_below="@+id/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_under_line_height" />
+
+</RelativeLayout>

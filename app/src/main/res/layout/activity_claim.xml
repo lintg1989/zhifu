@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.zheft.www.zheft.ui.ClaimActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="@dimen/page_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- 输入用户名-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_default_height">
+            <ImageView
+                android:id="@+id/iv_input_phone"
+                android:src="@mipmap/icon_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <cn.zheft.www.zheft.view.ClearEditText
+                style="@style/TextContentEdit"
+                android:id="@+id/cet_input_phone"
+                android:hint="@string/input_pos_phone"
+                android:maxLength="11"
+                android:inputType="phone"
+                android:digits="@string/char_phone_number"
+                android:background="@color/transparent"
+                android:paddingLeft="@dimen/input_withimg_padding"
+                android:layout_toRightOf="@+id/iv_input_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <include layout="@layout/divide_line_full" />
+
+        <!-- 输入验证码-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_default_height">
+            <ImageView
+                android:id="@+id/iv_input_verify_code"
+                android:src="@mipmap/icon_verify"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <cn.zheft.www.zheft.view.ClearEditText
+                style="@style/TextContentEdit"
+                android:id="@+id/cet_input_verify_code"
+                android:hint="@string/input_verify_code"
+                android:maxLength="6"
+                android:inputType="number"
+                android:digits="@string/char_verify_number"
+                android:background="@color/transparent"
+                android:paddingLeft="@dimen/input_withimg_padding"
+                android:layout_toRightOf="@+id/iv_input_verify_code"
+                android:layout_toLeftOf="@+id/view_input_divide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextContentDark"
+                android:id="@+id/tv_get_verify_code"
+                android:onClick="claimGetVerify"
+                android:text="@string/get_verify_code"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/get_verify_text_width"
+                android:layout_height="match_parent" />
+            <!-- 获取验证码竖向分隔条-->
+            <View
+                android:id="@+id/view_input_divide"
+                android:layout_marginLeft="@dimen/divide_line_vertical_margin"
+                android:layout_marginTop="@dimen/page_default_margin"
+                android:layout_marginBottom="@dimen/page_default_margin"
+                android:background="@color/divide_line_color"
+                android:layout_toLeftOf="@+id/tv_get_verify_code"
+                android:layout_width="@dimen/divide_line_width"
+                android:layout_height="match_parent" />
+            <!-- 获取验证码竖向分隔条-->
+        </RelativeLayout>
+        <include layout="@layout/divide_line_full" />
+
+        <!-- 用户协议以及认领说明等-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- "认领即同意"-->
+            <TextView
+                android:id="@+id/tv_claim_agreement"
+                android:text="@string/claim_agreement"
+                android:textSize="@dimen/text_size_content_small"
+                android:textColor="@color/text_color_light"
+                android:paddingLeft="@dimen/page_text_margin"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!-- 法奈昇用户协议-->
+            <TextView
+                android:id="@+id/tv_to_agreement"
+                android:onClick="claimAgreement"
+                android:text="@string/fns_user_agreement"
+                android:textSize="@dimen/text_size_content_small"
+                android:textColor="@color/theme_color_app"
+                android:layout_toRightOf="@+id/tv_claim_agreement"
+                android:paddingTop="@dimen/page_text_margin"
+                android:paddingBottom="@dimen/page_text_margin"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!-- 认领说明-->
+            <TextView
+                style="@style/TextContentClick"
+                android:id="@+id/tv_claim_instruct"
+                android:onClick="claimInstruction"
+                android:text="@string/claim_instruction"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:paddingTop="@dimen/button_top_margin"
+        android:paddingBottom="@dimen/page_default_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- 下一步按钮-->
+        <Button
+            style="@style/ButtonTheme"
+            android:id="@+id/btn_next"
+            android:onClick="claimNextStep"
+            android:text="@string/next_step"
+            android:layout_marginLeft="@dimen/button_default_margin"
+            android:layout_marginRight="@dimen/button_default_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_default_height" />
+        <!-- 登录/注册 -->
+        <LinearLayout
+            android:layout_margin="@dimen/view_default_margin"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                style="@style/ButtonThemeStroke"
+                android:id="@+id/btn_login"
+                android:onClick="claimToLogin"
+                android:text="@string/login_directly"
+                android:layout_margin="@dimen/view_small_margin"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_small_height" />
+            <Button
+                style="@style/ButtonTheme"
+                android:id="@+id/btn_register"
+                android:onClick="claimToRegister"
+                android:text="@string/register_qrcode_user"
+                android:layout_margin="@dimen/view_small_margin"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_small_height" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/qrcode_scan_padding_top"
+        android:layout_marginLeft="@dimen/view_large_margin"
+        android:layout_marginStart="@dimen/view_large_margin"
+        android:layout_marginRight="@dimen/view_large_margin"
+        android:layout_marginEnd="@dimen/view_large_margin"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:background="@color/bg_color_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="@dimen/view_large_margin"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/dialog_exit_waring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/TextContentDark"
+            android:text="可能交易已成功，请前往交易记录查看"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="收款结果以交易记录中显示为准"
+            android:textSize="@dimen/text_size_content"
+            android:textColor="@color/balance_head_color"
+            android:layout_margin="@dimen/view_default_margin"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginTop="@dimen/view_large_margin"
+            android:background="@color/divide_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_line_height" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/clickbar_default_height">
+            <View
+                android:id="@+id/view_dialog_qrcode_scan_exit"
+                android:layout_centerInParent="true"
+                android:background="@color/divide_line_color"
+                android:layout_width="@dimen/divide_line_width"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextContentDark"
+                android:id="@+id/tv_dialog_qrcode_scan_exit_back"
+                android:text="返回"
+                android:gravity="center"
+                android:background="@drawable/layout_click_selector"
+                android:layout_toLeftOf="@id/view_dialog_qrcode_scan_exit"
+                android:layout_toStartOf="@id/view_dialog_qrcode_scan_exit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                style="@style/TextContentDark"
+                android:id="@+id/tv_dialog_qrcode_scan_exit_list"
+                android:text="查看交易记录"
+                android:gravity="center"
+                android:background="@drawable/layout_click_selector"
+                android:layout_toRightOf="@id/view_dialog_qrcode_scan_exit"
+                android:layout_toEndOf="@id/view_dialog_qrcode_scan_exit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
